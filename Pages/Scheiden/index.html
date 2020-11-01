@@ -15,8 +15,8 @@
     <section>
         <header>
             <img src="./img/logo.webp" alt="logo" class="headerimg">
-            <!-- <button class="mute__button" onmousedown="audioMute()"></button> -->
-            <h1>Zoek de mineralen uit en stop ze in je rugzak</h1>
+            <div onclick="mute()" class="headermute" id="muteButton"></div>
+            <h1>Weeg je mineralen af</h1>
         </header>
 
         <div class="container">
@@ -32,13 +32,16 @@
 
         <footer>
             <div class="wrapper">
+                <div class="container__button" id="button--js">
+                    <a href="../casserite/home.html"> <img src="img/arrow.webp" alt="arrow" class="arrow"></a>
+                </div>
                 <div class='footer__counter' id="mineral__counter2--js">
                     <p></p>
                 </div>
 
                 <div class="card2 footer__grid">
                     <div class="mineral">
-                        <p>Weeg je mineralen</p>
+                        <p>Mineralen gewogen: </p>
                     </div>
 
                     <div class="mineral__counter">

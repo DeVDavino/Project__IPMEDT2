@@ -2,17 +2,27 @@ var clicks = 0;
 var mineralCounter = 0;
 var audio = new Audio("audio/stone.mp3");
 var audio2 = new Audio("audio/stone2.mp3");
-
-
-function redirectToHomePage(){
-  window.location.href  = "../index.html";
-}
-
-function redirectToNextPage(){
-  window.location.href = "../Scheiden/index.html";
-}
-
 document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
+
+
+var audioTracker = 0;
+function mute(){
+
+muteButton.classList.toggle("headermute--muted");
+if(audioTracker == 0){
+    audio.muted = true;
+    audio2.muted = true;
+    audioTracker++;
+} else if(audioTracker == 1){
+    audio.muted = false;
+    audio2.muted = false;
+    audioTracker--;
+}
+
+}
+
+
+
 //grid mining functies 1-6
     function onClick1() {
 

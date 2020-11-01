@@ -24,6 +24,24 @@ header{
   width: 100%;
   border-bottom: 2px solid black;
 }
+.headermute{
+  height: 4rem;
+  width: 4rem;
+  float: right;
+  background-image: url("../img/unmute.webp");
+  background-size: contain;
+  margin: 0.5rem;
+ 
+}
+.headermute--muted{
+  height: 4rem;
+  width: 4rem;
+  float: right;
+  background-image: url("../img/mute.webp");
+  background-size: contain;
+  margin: 0.5rem;
+ 
+}
 
 img{
   max-width: auto;

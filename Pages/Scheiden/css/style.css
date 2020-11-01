@@ -23,7 +23,7 @@ body{
     --background-color: #eeeeee;
 }
 p{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 section{
@@ -38,15 +38,24 @@ header{
     width: 100%;
     border-bottom: 2px solid black;
 }
-
-/* header button{
-    height: 2.5rem;
-    width: 2.5rem;
+.headermute{
+    height: 4rem;
+    width: 4rem;
     float: right;
-    border-radius: 50%;
-    background-color: red;
-
-} */
+    background-image: url("../img/unmute.webp");
+    background-size: contain;
+    margin: 0.5rem;
+   
+}
+.headermute--muted{
+    height: 4rem;
+    width: 4rem;
+    float: right;
+    background-image: url("../img/mute.webp");
+    background-size: contain;
+    margin: 0.5rem;
+   
+}
 footer{
     background-color: grey;
     max-width: 375px;
@@ -79,33 +88,57 @@ footer{
     grid-row: 1;
     align-items: center;
     justify-content: center;
-    opacity: 0;
 }
 
 .scale{
     display: grid;
     grid-column: 1 / 3;
     grid-row: 2;
-    opacity: 1;
     color: white;
-    width: 100px;
+    width: 120px;
     height: 100px;
     margin: auto;
 }
 .wrapper{
     position: relative;
+    overflow: hidden;
 }
 .footer__counter{
     position: absolute;
     width: 5rem;
     height: 2rem;
     left: 43%;
-    bottom: 34%;
+    bottom: 32%;
     justify-content: center;
     text-align: center;
     vertical-align: center;
-    color: black;
-    font-size: 2rem;
+    color:black;
+    font-size: 1.6rem;
+}
+.arrow{
+    position: relative;
+    left: 27.5%;
+    top: 3%;
+    cursor: pointer;
+    width: 30px;
+    height: auto;
+}
+.container__button{
+    position: fixed;
+    right: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #D00000;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    bottom: -3rem;
+}
+.container__button:hover{
+    transform: scale(2);
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    background-color: rgba(27, 198, 250, 0.5);
 }
 
 h1{
