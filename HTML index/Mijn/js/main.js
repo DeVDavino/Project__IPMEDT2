@@ -2,6 +2,11 @@ var clicks = 0;
 var mineralCounter = 0;
 var audio = new Audio("audio/stone.mp3");
 var audio2 = new Audio("audio/stone2.mp3");
+
+function redirectPage(){
+  window.location.href = "../Scheiden/index.html";
+}
+
 document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
 //grid mining functies 1-6
     function onClick1() {
