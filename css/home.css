@@ -29,11 +29,11 @@ img{
 }
 
 header{
-    background-color: grey;
+    background-color: rgba(0, 0, 0, .7);
     height: 5rem;
     width: 100%;
-    border-bottom: 2px solid black;
 }
+
 .container{
     height: 100vh;
     width: 100%;

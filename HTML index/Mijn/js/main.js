@@ -3,7 +3,12 @@ var mineralCounter = 0;
 var audio = new Audio("audio/stone.mp3");
 var audio2 = new Audio("audio/stone2.mp3");
 
-function redirectPage(){
+
+function redirectToHomePage(){
+  window.location.href  = "../index.html";
+}
+
+function redirectToNextPage(){
   window.location.href = "../Scheiden/index.html";
 }
 
