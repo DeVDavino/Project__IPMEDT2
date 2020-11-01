@@ -21,24 +21,24 @@ body{
 :root{
     --background-color: #eeeeee;
 }
+
 img{
     max-width: auto;
     max-height: 4.8rem;
     float: left;  
-  }
-  header{
+}
+
+header{
     background-color: grey;
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
-  
-  }
+}
 .container{
     height: 100vh;
     width: 100%;
     position: relative;
 }
-
 
 .container__logo{
     height: 10rem;
@@ -53,12 +53,12 @@ img{
 }
 
 .container__content{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 80vh;
 }
 
 .container__title{
@@ -71,7 +71,7 @@ img{
 }
 
 .container__title > h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Allerta Stencil', sans-serif;
     font-size: 3rem;
     padding: 1rem;
 }
@@ -85,7 +85,6 @@ img{
     padding: 2rem;
     background-color: rgba(255, 255, 255, .5);
     width: 375px;
-
 }
 
 .container__text > p{
@@ -130,10 +129,9 @@ button{
     height: auto;
 }
 
-
 @media only screen and (min-width: 700px) {
     .container__content__text{
         width: 700px;
     }
     
-  }
+}
