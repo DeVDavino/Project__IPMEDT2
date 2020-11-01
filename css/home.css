@@ -1,0 +1,139 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--background-color);
+    background-image: url('../img/frank.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+:root{
+    --background-color: #eeeeee;
+}
+img{
+    max-width: auto;
+    max-height: 4.8rem;
+    float: left;  
+  }
+  header{
+    background-color: grey;
+    height: 5rem;
+    width: 100%;
+    border-bottom: 2px solid black;
+  
+  }
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.container__logo{
+    height: 10rem;
+    width: 20rem;
+    top: 0; 
+    left: 0;
+}
+
+.container__logo > img{
+    height: 50%;
+    width: 50%;
+}
+
+.container__content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  height: 80vh;
+}
+
+.container__title{
+    color: #D00000;
+    justify-content: center;
+    text-align: center; 
+    background-color: rgba(255, 255, 255, .5);
+    position: absolute;
+    top: 7rem;
+}
+
+.container__title > h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.container__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, .5);
+    width: 375px;
+
+}
+
+.container__text > p{
+    font-family: 'Roboto', sans-serif;
+    max-width: 90%;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+
+.container__button{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #D00000;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    bottom: -5rem;
+}
+.container__button:hover{
+    transform: scale(2);
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    background-color: rgba(27, 198, 250, 0.5);
+}
+
+button{
+    position: relative;
+    left: 34.5%;
+    top: 30%;
+    cursor: pointer;
+}
+.arrow{
+    position: relative;
+    left: 31%;
+    top: 10%;
+    cursor: pointer;
+    width: 40px;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .container__content__text{
+        width: 700px;
+    }
+    
+  }
