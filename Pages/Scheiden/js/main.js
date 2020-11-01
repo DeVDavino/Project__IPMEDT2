@@ -11,7 +11,6 @@ var muteButton = document.getElementById('muteButton');
 var clicks = 0;
 var audio = new Audio("./audio/scheiden.mp3");
 
-
 var audioTracker = 0;
 function mute(){
 
