@@ -66,7 +66,9 @@ function onClickEvent1(){
     console.log(clicks);
     clicks++;  
     document.getElementById("mineral__counter--js").innerHTML = clicks / 5 + " kg";
+    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5;
     firstMineral.removeAttribute("onclick");
+    firstMineral.style.opacity = "0";
     return clicks;
 }
  
@@ -76,7 +78,9 @@ function onClickEvent2(){
         console.log(clicks);
         clicks++;  
         document.getElementById("mineral__counter--js").innerHTML = clicks / 5 + " kg";
+        document.getElementById("mineral__counter2--js").innerHTML = clicks / 5;
         secondMineral.removeAttribute("onclick");
+        secondMineral.style.opacity = "0";
         return clicks;
 }
 
@@ -86,7 +90,9 @@ function onClickEvent3(){
     console.log(clicks);
     clicks++;  
     document.getElementById("mineral__counter--js").innerHTML = clicks / 5 + " kg";
+    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5;
     thirdMineral.removeAttribute("onclick");
+    thirdMineral.style.opacity = "0";
     return clicks;
 }
 
@@ -96,7 +102,9 @@ function onClickEvent4(){
     console.log(clicks);
     clicks++;  
     document.getElementById("mineral__counter--js").innerHTML = clicks / 5 + " kg";
+    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5;
     forthMineral.removeAttribute("onclick");
+    forthMineral.style.opacity = "0";
     return clicks;
 }
 
@@ -106,7 +114,9 @@ function onClickEvent5(){
     console.log(clicks);
     clicks++;  
     document.getElementById("mineral__counter--js").innerHTML = clicks / 5 + " kg";
+    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5;
     fifthMineral.removeAttribute("onclick");
+    fifthMineral.style.opacity = "0";
     return clicks;
 }
 
@@ -116,7 +126,9 @@ function onClickEvent6(){
     console.log(clicks);
     clicks++;  
     document.getElementById("mineral__counter--js").innerHTML = clicks / 5 + " kg";
+    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5;
     sixthMineral.removeAttribute("onclick");
+    sixthMineral.style.opacity = "0";
     return clicks;
 }
 
