@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 html{
     font-size: 62.5%;
 }
@@ -21,6 +21,19 @@ body{
 :root{
     --background-color: rgba(255, 255, 255, .4);
 }
+h2{
+    color: white;
+    font-family: 'Allerta Stencil', sans-serif;
+    margin: auto;
+    width: 400px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+span{
+    color: red;
+}
+
 
 img{
     max-width: auto;
@@ -94,6 +107,7 @@ header{
     font-size: 1.8rem;
     text-align: left;
     color: black;
+    max-width: 800px;
 }
 
 .container__button{
@@ -112,7 +126,7 @@ header{
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-    background-color: rgba(27, 198, 250, 0.5);
+    background-color:#0EA900;
 }
 
 button{

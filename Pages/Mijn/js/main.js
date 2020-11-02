@@ -230,8 +230,11 @@ setInterval(onLoad, 500);
 function onLoad(){
   if(mineralCounter == 3){
     document.getElementById("myButton--js").style.opacity = "1";
+    document.getElementById("myButton--js").style.backgroundColor = "#0EA900";
     document.getElementById("CounterVar--js").style.fontSize = "2.55rem";
     document.getElementById("CounterVar--js").innerHTML = "✔";
+    document.getElementById("CounterVar--js").style.color = "#0EA900";
+    document.getElementById("myButton--js").setAttribute("onclick", "redirectToNextPage()") ;
   }else {
     console.log("big error");
   }

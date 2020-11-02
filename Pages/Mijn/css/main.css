@@ -19,10 +19,10 @@ section{
 }
 
 header{
-  background-color: grey;
+  background-color: rgba(0, 0, 0, .7);
   height: 5rem;
   width: 100%;
-  border-bottom: 2px solid black;
+
 }
 .headermute{
   height: 4rem;
@@ -31,7 +31,6 @@ header{
   background-image: url("../img/unmute.webp");
   background-size: contain;
   margin: 0.5rem;
- 
 }
 .headermute--muted{
   height: 4rem;
@@ -40,7 +39,6 @@ header{
   background-image: url("../img/mute.webp");
   background-size: contain;
   margin: 0.5rem;
- 
 }
 
 img{
@@ -87,7 +85,7 @@ h1{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   display: grid;
-  max-width: 375px;
+  max-width: 90%;
   height: 70vh;
   margin: auto;
   align-items: stretch;
@@ -101,7 +99,7 @@ h1{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 55px 55px;
-  width: 370px;
+  max-width: 370px;
   background-color: grey;
   max-height: 100%;
   margin: auto;
@@ -115,13 +113,13 @@ button {
   padding: 0.5rem;
   display: grid;
   margin-top: 1rem;
-  background-color: #D60000;
+  background-color: grey;
   font-size: 2rem;
   font-weight: 500;
   color: white;
   border: 2px solid white;
   border-radius: 1rem;
-  opacity: 0;
+  opacity: 0.2;
   cursor: pointer;
   justify-content: center;
   grid-column: 1 / 3;
@@ -130,7 +128,7 @@ button {
 
 footer{
   background-color: grey;
-  max-width: 375px;
+  max-width: 90%;
   margin: auto;
   height: 500px;
   border: 2px solid black;
@@ -208,16 +206,13 @@ footer{
 
 @media only screen and (min-width: 700px){
   .mine__grid{
-    max-width: 700px;
+    max-width: 750px;
   }
   footer{
-    
-    max-width: 700px;
+    max-width: 750px;
     
   }
   .grid2{
-    
-    width: 680px;
-    
+    width: 685px;
   }
 }

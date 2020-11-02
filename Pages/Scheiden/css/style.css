@@ -13,10 +13,11 @@ body{
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-color: black;
-    background-size: center;
+    background-size: cover;
     overflow-x: hidden;
+    background-image: url("../img/mobileHands.webp");
 }
 
 :root{
@@ -33,10 +34,10 @@ section{
 }
 
 header{
-    background-color: grey;
+    background-color: rgba(0, 0, 0, .7);
     height: 5rem;
     width: 100%;
-    border-bottom: 2px solid black;
+
 }
 .headermute{
     height: 4rem;
@@ -60,8 +61,8 @@ footer{
     background-color: grey;
     max-width: 375px;
     margin: auto;
-    height: 300px;
-    border: 2px solid black;
+    height: 800px;
+    opacity: 1;
 }
 .footer__grid{
     display: grid;
@@ -138,7 +139,7 @@ footer{
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-    background-color: rgba(27, 198, 250, 0.5);
+    background-color: #0EA900;
 }
 
 h1{
@@ -168,10 +169,10 @@ h1{
     grid-template-columns: repeat(6,minmax(0,1fr)); 
     grid-template-rows: repeat(6,minmax(0,1fr)); 
     height: 475px;
-    max-width: 375px;
-    background-color: #eeeeee;
+    max-width: 80%;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 5%;
-    background-image: url('../img/minerals.webp');
+    background-color: ;
     background-size: cover;
     padding: 1rem;
     margin: auto;
@@ -249,18 +250,22 @@ h1{
 }
 
 
-@media only screen and (max-width: 400px){
-    .card__container{
-        max-width: 400px;
+
+
+@media only screen and (min-width: 700px){
+    .container__grid{
+      max-width: 750px;
+      max-height: 750px;
+      width: 80%;
     }
 
-} 
-@media only screen and (min-width: 600px) {
-    .card__container{
-        max-width: 600px;
+    .grid2{
+      width: 685px;
+    }    
+  }
 
+  @media only screen and (min-width: 500px){
+    body{
+        background-image: url("../img/Hands.webp");
     }
-}
-
-
-
+  }
