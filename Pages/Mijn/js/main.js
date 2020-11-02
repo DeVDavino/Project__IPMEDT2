@@ -24,8 +24,6 @@ if(audioTracker == 0){
 
 }
 
-
-
 //grid mining functies 1-6
     function onClick1() {
 
@@ -130,6 +128,7 @@ function onClick3() {
         }
         return results;
      };
+
 function onClick4() {
       console.log(clicks);
         var element = document.getElementById("content4--js");
@@ -163,6 +162,7 @@ function onClick4() {
         }
         return results;
      };
+
 function onClick5() {
       console.log(clicks);
         var element = document.getElementById("content5--js");
@@ -238,13 +238,11 @@ function onLoad(){
     document.getElementById("myButton--js").style.opacity = "1";
     document.getElementById("myButton--js").style.backgroundColor = "#0EA900";
     document.getElementById("CounterVar--js").style.fontSize = "2.55rem";
+    document.getElementById("CounterVar--js").style.borderColor = "#00FF00";
     document.getElementById("CounterVar--js").innerHTML = "✔";
-    document.getElementById("CounterVar--js").style.color = "#0EA900";
+    document.getElementById("CounterVar--js").style.color = "#eeeeee";
     document.getElementById("myButton--js").setAttribute("onclick", "redirectToNextPage()") ;
   }else {
     console.log("big error");
   }
 }
-function refreshPage(){
-  window.location.reload();
-} 
