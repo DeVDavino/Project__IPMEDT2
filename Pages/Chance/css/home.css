@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
 html{
     font-size: 62.5%;
@@ -20,24 +19,28 @@ body{
 } 
 
 :root{
-    --background-color: rgba(255, 255, 255, .4);
+    --background-color: rgba(255, 255, 255, .6);
 }
+
 img{
     max-width: auto;
     max-height: 4.8rem;
     float: left; 
-  }
-  header{
+}
+
+header{
     background-color: rgba(0, 0, 0, .7);
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
-  }
+}
+
 .container{
     height: 100vh;
     width: 100%;
     position: relative;
 }
+
 h2{
     color: white;
     font-family:sans-serif;
@@ -46,7 +49,9 @@ h2{
     padding: 1rem;
     text-align: center;
     font-size: 2rem;
+    font-family: 'Allerta Stencil', sans-serif;
 }
+
 span{
     color: red;
 }
@@ -64,12 +69,12 @@ span{
 }
 
 .container__content{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 80vh;
 }
 
 .container__title{
@@ -81,9 +86,9 @@ span{
 }
 
 .container__title > h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Allerta Stencil', sans-serif;
     font-size: 3rem;
-    padding: 1rem;
+    padding: .2rem;
 }
 
 .container__text{
@@ -93,7 +98,7 @@ span{
     text-align: center;
     margin-top: 40rem;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: var(--background-color);
     width: 100vw;
 }
 
@@ -105,7 +110,6 @@ span{
     max-width: 800px;
 
 }
-
 
 .container__button{
     position: fixed;
@@ -119,6 +123,7 @@ span{
     height: 10rem;
     bottom: -5rem;
 }
+
 .container__button:hover{
     transform: scale(2);
     transition-delay: 0.1s;
@@ -146,10 +151,11 @@ button{
     .container__content{
         max-width: 50%;
         margin: auto;
-      }
-      body{
-          background-image: url('../img/chanceDesktop.webp');
-          background-color: black;
-      }
+    }
     
-  }
+    body{
+        background-image: url('../img/chanceDesktop.webp');
+        background-color: black;
+    }
+    
+}
