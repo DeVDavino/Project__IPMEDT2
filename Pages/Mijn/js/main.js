@@ -60,6 +60,7 @@ if(audioTracker == 0){
           var results = [clicks = 0, mineralCounter];
           document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
           document.getElementById('content1--js').removeAttribute("onclick");
+          document.getElementById('textAppear1').style.opacity = "1";
         }
         return results;
      };
@@ -92,6 +93,7 @@ function onClick2() {
           audio2.play();
           var results = [clicks = 0, mineralCounter];
           document.getElementById('content2--js').removeAttribute("onclick");
+          document.getElementById('textAppear2').style.opacity = "1";
        
         }
         return results;
@@ -124,6 +126,7 @@ function onClick3() {
           audio2.play();
           var results = [clicks = 0, mineralCounter];
           document.getElementById('content3--js').removeAttribute("onclick");
+          document.getElementById('textAppear3').style.opacity = "1";
         }
         return results;
      };
@@ -156,6 +159,7 @@ function onClick4() {
           var results = [clicks = 0, mineralCounter];
           document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
           document.getElementById('content4--js').removeAttribute("onclick");
+          document.getElementById('textAppear4').style.opacity = "1";
         }
         return results;
      };
@@ -188,6 +192,7 @@ function onClick5() {
           var results = [clicks = 0, mineralCounter];
           document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
           document.getElementById('content5--js').removeAttribute("onclick");
+          document.getElementById('textAppear5').style.opacity = "1";
         }
         
         return results;
@@ -219,6 +224,7 @@ function onClick6() {
           audio2.play();
           var results = [clicks = 0, mineralCounter];
           document.getElementById('content6--js').removeAttribute("onclick");
+          document.getElementById('textAppear6').style.opacity = "1";
           
         }
         return results;
