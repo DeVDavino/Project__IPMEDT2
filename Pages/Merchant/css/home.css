@@ -17,9 +17,11 @@ body{
     background-size: cover;
     overflow-y: hidden;
     height: 100vh;
-
 }
-
+p{
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+}
 :root{
     --background-color: rgba(255, 255, 255, .4);
 }
@@ -49,11 +51,19 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
+h1{
+    font-family: sans-serif;  
+    font-size: 1.5rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
 span{
     color: red;
 }
-
-
+.grid__content{
+    border-top: 1px solid black;
+}
 .container__logo{
     height: 10rem;
     width: 20rem;
@@ -68,16 +78,33 @@ span{
 .container__pricegrid{
     display: grid;
     grid-template-rows:1fr 1fr 1fr;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 40% 1fr 0.5fr;
     height: 600px;
-    width: 90%;
+    width: 95%;
     margin: auto;
-    margin-top: 20%;
-   
+    margin-top: 10%;
+
 }
-.grid__content{
-    border: 1px solid black;
+
+.grid__content1{
+    background-image: url("../img/coltan.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+.grid__content4{
+    background-image: url("../img/cassierite.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.grid__content7{
+    background-image: url("../img/wolframite.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .container__button{
     position: fixed;
