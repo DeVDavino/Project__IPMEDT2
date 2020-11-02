@@ -80,14 +80,15 @@ footer{
     background-repeat: no-repeat;
 }
 .mineral{
-    font-size: 2.4rem;
+    font-family: 'Roboto', sans-serif;
     float: left;
     color: white;
     grid-column: 1;
     grid-row: 1;
 }
+
 .mineral__counter{
-    font-size: 2.4rem;
+    font-family: 'Roboto', sans-serif;
     color: white;
     grid-column: 2;
     grid-row: 1;
