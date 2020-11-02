@@ -18,30 +18,35 @@ body{
     overflow-y: hidden;
     height: 100vh;
 }
+
 p{
     font-size: 2rem;
     font-family: 'Indie Flower', cursive;
 }
+
 :root{
     --background-color: rgba(255, 255, 255, .4);
 }
+
 img{
     max-width: auto;
     max-height: 4.8rem;
     float: left;  
-  }
+}
+
 header{
     background-color: grey;
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
-  }
+}
 
 .container{
     height: 100vh;
     width: 100%;
     position: relative;
 }
+
 h2{
     color: white;
     font-family: sans-serif;
@@ -51,6 +56,7 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
+
 h1{
     font-family: sans-serif;  
     font-size: 1.5rem;
@@ -58,12 +64,15 @@ h1{
     max-width: 800px;
     margin: auto;
 }
+
 span{
     color: red;
 }
+
 .grid__content{
     border-top: 1px solid black;
 }
+
 .container__logo{
     height: 10rem;
     width: 20rem;
@@ -92,19 +101,20 @@ span{
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .grid__content4{
     background-image: url("../img/cassierite.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .grid__content7{
     background-image: url("../img/wolframite.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 .container__button{
     position: fixed;
@@ -118,6 +128,7 @@ span{
     height: 10rem;
     bottom: -5rem;
 }
+
 .container__button:hover{
     transform: scale(2);
     transition-delay: 0.1s;
@@ -146,4 +157,4 @@ button{
         width: 700px;
     }
     
-  }
+}

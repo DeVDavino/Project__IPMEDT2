@@ -36,9 +36,9 @@ function check(){
 
 
 
-// function pageRedirect(){
-//     window.location.replace("https://");
-// }
+function redirectToNextPage(){
+    window.location.href = "/Pages/Merchant/index.html";
+}
 
 // setTimeout("pageRedirect()", 1000);
 
