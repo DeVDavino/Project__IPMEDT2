@@ -48,9 +48,9 @@ function onClickEvent1(){
     firstMineral.classList.add("container__item1--active");
     audio.play();
     console.log(clicks);
-    clicks++;  
+    clicks++;
     document.getElementById("mineral__counter--js").innerHTML = clicks;
-    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5  + " kg";
+    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5 + " kg";
     firstMineral.removeAttribute("onclick");
     firstMineral.style.opacity = "0";
     return clicks;
@@ -62,7 +62,7 @@ function onClickEvent2(){
     console.log(clicks);
     clicks++;  
     document.getElementById("mineral__counter--js").innerHTML = clicks;
-    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5  + " kg";
+    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5 + " kg";
     secondMineral.removeAttribute("onclick");
     secondMineral.style.opacity = "0";
     return clicks;
