@@ -46,7 +46,6 @@ header{
     background-image: url("../img/unmute.webp");
     background-size: contain;
     margin: 0.5rem;
-   
 }
 .headermute--muted{
     height: 4rem;
@@ -55,14 +54,12 @@ header{
     background-image: url("../img/mute.webp");
     background-size: contain;
     margin: 0.5rem;
-   
 }
 footer{
     background-color: grey;
     max-width: 375px;
     margin: auto;
     height: 800px;
-    opacity: 1;
 }
 .footer__grid{
     display: grid;
@@ -150,7 +147,7 @@ h1{
     font-size: 1.7rem;
     text-align: center;
     padding-top: 0.6rem;
-  }
+}
 
 .headerimg{
     max-width: auto;
@@ -166,10 +163,10 @@ h1{
 
 .container__grid{
     display: grid;
-    grid-template-columns: repeat(6,minmax(0,1fr)); 
-    grid-template-rows: repeat(6,minmax(0,1fr)); 
+    grid-template-columns: repeat(3,minmax(0,1fr)); 
+    grid-template-rows: repeat(3,minmax(0,1fr)); 
     height: 475px;
-    max-width: 80%;
+    max-width: 90%;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 5%;
     background-color: ;
@@ -179,61 +176,73 @@ h1{
 }
 
 .container__item1{
-    grid-column: 2;
-    grid-row: 2;
-    background: url('../img/mineralBackground.webp');
+    grid-column: 1;
+    grid-row: 1;
+    background: url('../img/cassierite.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .container__item1--active{
-    transform: translate(100px, 500px);
+    transform: translate(0, 200px);
     transition: all 2s;
 }
 
 .container__item2{
-    grid-column: 4;
-    grid-row: 5;
-    background: url('../img/mineralBackground.webp');
+    grid-column: 1;
+    grid-row: 2;
+    background: url('../img/coltan.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .container__item2--active{
-    transform: translate(-20px, 273px);
+    transform: translate(100px, 273px);
     transition: all 2s;
 }
 
 .container__item3{
-    grid-column: 1;
-    grid-row: 4;
-    background: url('../img/mineralBackground.webp');
+    grid-column: 3;
+    grid-row: 3;
+    background: url('../img/coltan.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .container__item3--active{
-    transform: translate(130px, 349px);
+    transform: translate(-100px, 320px);
     transition: all 2s;
 }
 
 .container__item4{
-    grid-column: 5;
+    grid-column: 2;
     grid-row: 3;
-    background: url('../img/mineralBackground.webp');
+    background: url('../img/cassierite.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .container__item4--active{
-    transform: translate(-90px, 425px);
+    transform: translate(10px, 225px);
     transition: all 2s;
 }
 
 .container__item5{
-    grid-column: 4;
-    grid-row: 1;
-    background: url('../img/mineralBackground.webp');
+    grid-column: 2;
+    grid-row: 2;
+    background: url('../img/wolframite.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .container__item5--active{
-    transform: translate(-15px, 576px);
+    transform: translate(0px, 200px);
     transition: all 2s;
 }
 .container__item6{
-    grid-column: 6;
-    grid-row: 6;
-    background: url('../img/mineralBackground.webp');
+    grid-column: 3;
+    grid-row: 1;
+    background: url('../img/wolframite.webp');
+    background-size: contain;
+     background-repeat: no-repeat;
 }
 .container__item6--active{
-    transform: translate(-150px, 197px);
+    transform: translate(-50px, 300px);
     transition: all 2s;
 }
 .card__counter{
@@ -254,18 +263,25 @@ h1{
 
 @media only screen and (min-width: 700px){
     .container__grid{
-      max-width: 750px;
-      max-height: 750px;
-      width: 80%;
+    max-width: 600px;
+    max-height: 750px;
+    width: 80%;
     }
 
     .grid2{
-      width: 685px;
+    width: 685px;
     }    
-  }
+    
+    footer{
+        height: 800px;
+        margin-top: 200px;
+    }
+}
 
-  @media only screen and (min-width: 500px){
+@media only screen and (min-width: 500px){
     body{
         background-image: url("../img/Hands.webp");
     }
-  }
+}
+
+

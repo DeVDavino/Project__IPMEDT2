@@ -36,18 +36,6 @@ function check(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // function pageRedirect(){
 //     window.location.replace("https://");
 // }
@@ -67,17 +55,17 @@ function onClickEvent1(){
     firstMineral.style.opacity = "0";
     return clicks;
 }
- 
+
 function onClickEvent2(){
-        secondMineral.classList.add("container__item2--active");
-        audio.play();
-        console.log(clicks);
-        clicks++;  
-        document.getElementById("mineral__counter--js").innerHTML = clicks;
-        document.getElementById("mineral__counter2--js").innerHTML = clicks / 5  + " kg";
-        secondMineral.removeAttribute("onclick");
-        secondMineral.style.opacity = "0";
-        return clicks;
+    secondMineral.classList.add("container__item2--active");
+    audio.play();
+    console.log(clicks);
+    clicks++;  
+    document.getElementById("mineral__counter--js").innerHTML = clicks;
+    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5  + " kg";
+    secondMineral.removeAttribute("onclick");
+    secondMineral.style.opacity = "0";
+    return clicks;
 }
 
 function onClickEvent3(){
