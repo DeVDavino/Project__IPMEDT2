@@ -153,7 +153,10 @@ button {
 }
 
 footer{
-  background-color: #964B00;
+  background: url('/Pages/Mijn/img/vintagePaperTexture.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   max-width: 90%;
   margin: auto;
   height: 500px;

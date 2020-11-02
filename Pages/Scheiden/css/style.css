@@ -71,6 +71,13 @@ footer{
     align-items: middle;
     text-align: center;
     padding: 2rem;
+    box-shadow: inset 0 0 10px #000000;
+    border: 10px solid;
+    border-image: url('/Pages/Scheiden/img/stoneTexture.webp') 100 100 round;
+    background: url('/Pages/Scheiden/img/vintagePaperTexture.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .mineral{
     font-size: 2.4rem;
@@ -239,7 +246,7 @@ h1{
     grid-row: 1;
     background: url('../img/wolframite.webp');
     background-size: contain;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 .container__item6--active{
     transform: translate(-50px, 300px);
