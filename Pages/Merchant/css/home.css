@@ -168,5 +168,8 @@ button{
     .container__content__text{
         width: 700px;
     }
+    html{
+        font-size: 80%;
+    }
     
 }
