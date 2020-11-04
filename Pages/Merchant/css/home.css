@@ -98,6 +98,7 @@ span{
     background-color: green;
     text-align: center;
     border-radius: 1rem;
+    cursor: pointer;
 }
 .container__logo{
     height: 10rem;
