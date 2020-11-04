@@ -20,12 +20,12 @@ body{
 }
 
 p{
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-family: 'Indie Flower', cursive;
 }
 .grid__totalprice{
     color: green;
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-align: center;
 }
 :root{
@@ -52,7 +52,7 @@ header{
 }
 h1{
     font-family: sans-serif;  
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 1rem;
     max-width: 800px;
     margin: auto;
@@ -72,7 +72,25 @@ h3{
 span{
     color: red;
 }
-
+.span__green{
+    color: green;
+}
+.headermute{
+    height: 4rem;
+    width: 4rem;
+    float: right;
+    background-image: url("../img/unmute.webp");
+    background-size: contain;
+    margin: 0.5rem;
+  }
+  .headermute--muted{
+    height: 4rem;
+    width: 4rem;
+    float: right;
+    background-image: url("../img/mute.webp");
+    background-size: contain;
+    margin: 0.5rem;
+  }
 .calc{
     width: 25rem;
     height: auto;
@@ -95,13 +113,12 @@ span{
 .container__pricegrid{
     display: grid;
     grid-template-rows:1fr 1fr 1fr;
-    grid-template-columns: 40% 1fr 1fr;
+    grid-template-columns: 38% 1fr 0.5fr;
     height: 50%;
     width: 95%;
     max-width: 800px;
     margin: auto;
     margin-top: 1%;
-
     text-align: center;
 }
 

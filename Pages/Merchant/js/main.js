@@ -10,9 +10,24 @@ var txt7 = '                                           8';
 var speed = 100;
 var speed1 = 500;
 var calcTracker = 0;
+var audio = new Audio("audio/audio3.mp3");
+var audioTracker = 0;
 
+function mute(){
+
+muteButton.classList.toggle("headermute--muted");
+if(audioTracker == 0){
+    audio.muted = true;
+    audioTracker++;
+} else if(audioTracker == 1){
+    audio.muted = false;
+    audioTracker--;
+}
+
+}
 function typeWriter() {
   if (i < txt7.length) {
+    audio.play();
     document.getElementById("demo").innerHTML += txt.charAt(i);
     document.getElementById("demo1").innerHTML += txt.charAt(i);
     document.getElementById("demo2").innerHTML += txt.charAt(i);
