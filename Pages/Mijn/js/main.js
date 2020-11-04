@@ -10,7 +10,7 @@ document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
 // }
 
 var audioTracker = 0;
-
+document.getElementById("myButton--js").disabled = true;
 function mute() {
 
   muteButton.classList.toggle("headermute--muted");
@@ -211,6 +211,7 @@ function onClick6() {
     var results = [clicks = 0, mineralCounter];
     document.getElementById('content6--js').removeAttribute("onclick");
     document.getElementById('textAppear6').style.opacity = "1";
+  
 
   }
   return results;
@@ -228,6 +229,8 @@ function onLoad() {
     document.getElementById("CounterVar--js").style.borderColor = "#00FF00";
     document.getElementById("CounterVar--js").innerHTML = "✔";
     document.getElementById("CounterVar--js").style.color = "#eeeeee";
+    document.getElementById("myButton--js").disabled = false;
+    
   } else {
     console.log("big error");
   }
