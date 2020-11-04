@@ -25,7 +25,7 @@ p{
 }
 .grid__totalprice{
     color: green;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 :root{
@@ -52,7 +52,7 @@ header{
 }
 h1{
     font-family: sans-serif;  
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 1rem;
     max-width: 800px;
     margin: auto;
@@ -172,7 +172,7 @@ button{
 }
 .arrow{
     position: relative;
-    left: 35%;
+    left: 33%;
     top: 10%;
     cursor: pointer;
     width: 40px;
