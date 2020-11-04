@@ -12,39 +12,35 @@ var clicks = 0;
 var audio = new Audio("./audio/scheiden.mp3");
 
 var audioTracker = 0;
-function mute(){
 
-muteButton.classList.toggle("headermute--muted");
-if(audioTracker == 0){
-    audio.muted = true;
-    audioTracker++;
-} else if(audioTracker == 1){
-    audio.muted = false;
-    audioTracker--;
-}
+function mute() {
+
+    muteButton.classList.toggle("headermute--muted");
+    if (audioTracker == 0) {
+        audio.muted = true;
+        audioTracker++;
+    } else if (audioTracker == 1) {
+        audio.muted = false;
+        audioTracker--;
+    }
 
 }
 
 setInterval(check, 100);
-function check(){
-    if(clicks >= 6){
+
+function check() {
+    if (clicks >= 6) {
         button.style.opacity = '1';
-    }else{
+    } else {
         button.style.opacity = '0';
     }
 }
 
-
-
-function redirectToNextPage(){
-    window.location.href = "/Pages/Merchant/index.html";
+function redirectToNextPage() {
+    window.location.href = "../Merchant/index.html";
 }
 
-// setTimeout("pageRedirect()", 1000);
-
-
-
-function onClickEvent1(){
+function onClickEvent1() {
     firstMineral.classList.add("container__item1--active");
     audio.play();
     console.log(clicks);
@@ -56,11 +52,11 @@ function onClickEvent1(){
     return clicks;
 }
 
-function onClickEvent2(){
+function onClickEvent2() {
     secondMineral.classList.add("container__item2--active");
     audio.play();
     console.log(clicks);
-    clicks++;  
+    clicks++;
     document.getElementById("mineral__counter--js").innerHTML = clicks;
     document.getElementById("mineral__counter2--js").innerHTML = clicks / 5 + " kg";
     secondMineral.removeAttribute("onclick");
@@ -68,11 +64,11 @@ function onClickEvent2(){
     return clicks;
 }
 
-function onClickEvent3(){
+function onClickEvent3() {
     thirdMineral.classList.add("container__item3--active");
     audio.play();
     console.log(clicks);
-    clicks++;  
+    clicks++;
     document.getElementById("mineral__counter--js").innerHTML = clicks;
     document.getElementById("mineral__counter2--js").innerHTML = clicks / 5 + " kg";
     thirdMineral.removeAttribute("onclick");
@@ -80,11 +76,11 @@ function onClickEvent3(){
     return clicks;
 }
 
-function onClickEvent4(){
+function onClickEvent4() {
     forthMineral.classList.add("container__item4--active");
     audio.play();
     console.log(clicks);
-    clicks++;  
+    clicks++;
     document.getElementById("mineral__counter--js").innerHTML = clicks;
     document.getElementById("mineral__counter2--js").innerHTML = clicks / 5 + " kg";
     forthMineral.removeAttribute("onclick");
@@ -92,11 +88,11 @@ function onClickEvent4(){
     return clicks;
 }
 
-function onClickEvent5(){
+function onClickEvent5() {
     fifthMineral.classList.add("container__item5--active");
     audio.play();
     console.log(clicks);
-    clicks++;  
+    clicks++;
     document.getElementById("mineral__counter--js").innerHTML = clicks;
     document.getElementById("mineral__counter2--js").innerHTML = clicks / 5 + " kg";
     fifthMineral.removeAttribute("onclick");
@@ -104,16 +100,14 @@ function onClickEvent5(){
     return clicks;
 }
 
-function onClickEvent6(){
+function onClickEvent6() {
     sixthMineral.classList.add("container__item6--active");
     audio.play();
     console.log(clicks);
-    clicks++;  
+    clicks++;
     document.getElementById("mineral__counter--js").innerHTML = clicks;
     document.getElementById("mineral__counter2--js").innerHTML = clicks / 5 + " kg";
     sixthMineral.removeAttribute("onclick");
     sixthMineral.style.opacity = "0";
     return clicks;
 }
-
-
