@@ -92,8 +92,8 @@ h1{
 }
 .section__text{
     margin-left: 2rem;
-    padding: 2rem;
-    font-size: 2rem;
+    padding: 1rem;
+    font-size: 1.8rem;
     font-family: sans-serif;
     max-width: 700px;
     margin: auto;
