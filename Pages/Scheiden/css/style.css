@@ -19,7 +19,7 @@ body {
     background-color: black;
     background-size: cover;
     overflow-x: hidden;
-    background-image: url("../img/Hands.webp");
+    background-image: url("../img/mobileBackground.webp");
 }
 
 :root {
@@ -309,6 +309,6 @@ h1 {
 
 @media only screen and (min-width: 500px) {
     body {
-        background-image: url("../img/Hands.webp");
+        background-image: url("../img/desktopBackground.webp");
     }
 }
