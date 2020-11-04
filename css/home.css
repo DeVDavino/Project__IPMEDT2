@@ -1,14 +1,16 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
-html{
+
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     background-color: var(--background-color);
     background-image: url('../img/frank.webp');
     background-position: center;
@@ -18,10 +20,11 @@ body{
     height: 100vh;
 }
 
-:root{
+:root {
     --background-color: rgba(255, 255, 255, .6);
 }
-h2{
+
+h2 {
     color: white;
     font-family: 'Allerta Stencil', sans-serif;
     margin: auto;
@@ -30,42 +33,43 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
-span{
+
+span {
     color: red;
 }
 
 
-img{
+img {
     max-width: auto;
     max-height: 4.8rem;
-    float: left;  
+    float: left;
 }
 
-header{
+header {
     background-color: rgba(0, 0, 0, .7);
     height: 5rem;
     width: 100%;
 }
 
-.container{
+.container {
     height: 100vh;
     width: 100%;
     position: relative;
 }
 
-.container__logo{
+.container__logo {
     height: 10rem;
     width: 20rem;
-    top: 0; 
+    top: 0;
     left: 0;
 }
 
-.container__logo > img{
+.container__logo>img {
     height: 50%;
     width: 50%;
 }
 
-.container__content{
+.container__content {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -76,22 +80,22 @@ header{
     overflow-x: none;
 }
 
-.container__title{
+.container__title {
     color: #D00000;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
     border-radius: .5rem;
     position: absolute;
     top: 2rem;
 }
 
-.container__title > h1{
+.container__title>h1 {
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 3rem;
     padding: .2rem;
 }
 
-.container__text{
+.container__text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +106,7 @@ header{
     width: 100vw;
 }
 
-.container__text > p{
+.container__text>p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     text-align: left;
@@ -110,7 +114,7 @@ header{
     max-width: 800px;
 }
 
-.container__button{
+.container__button {
     position: fixed;
     left: 0;
     right: 0;
@@ -122,20 +126,22 @@ header{
     height: 10rem;
     bottom: -5rem;
 }
-.container__button:hover{
+
+.container__button:hover {
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-    background-color:#0EA900;
+    background-color: #0EA900;
 }
 
-button{
+button {
     position: relative;
     left: 34.5%;
     top: 30%;
     cursor: pointer;
 }
-.arrow{
+
+.arrow {
     position: relative;
     left: 31%;
     top: 10%;
@@ -145,8 +151,8 @@ button{
 }
 
 @media only screen and (min-width: 700px) {
-    .container__content__text{
+    .container__content__text {
         width: 700px;
     }
-    
+
 }

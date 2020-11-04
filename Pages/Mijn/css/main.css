@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +10,8 @@ html {
   font-size: 62.5%;
 
 }
-section{
+
+section {
   height: 100vh;
   background-image: url("../img/mine.webp");
   background-position: center;
@@ -18,12 +21,13 @@ section{
   overflow-y: hidden;
 }
 
-header{
+header {
   background-color: rgba(0, 0, 0, .7);
   height: 5rem;
   width: 100%;
 }
-.headermute{
+
+.headermute {
   height: 4rem;
   width: 4rem;
   float: right;
@@ -31,7 +35,8 @@ header{
   background-size: contain;
   margin: 0.5rem;
 }
-.headermute--muted{
+
+.headermute--muted {
   height: 4rem;
   width: 4rem;
   float: right;
@@ -40,42 +45,49 @@ header{
   margin: 0.5rem;
 }
 
-img{
+img {
   max-width: auto;
   max-height: 4.8rem;
-  float: left;  
+  float: left;
 }
-p{
+
+p {
   color: white;
   font-size: 2rem;
   font-family: sans-serif;
 }
-.mine__content1 > p{
-  opacity: 0;
-  padding-top: 1rem;
-}
-.mine__content2 > p{
-  opacity: 0;
-  padding-top: 1rem;
-}
-.mine__content3 > p{
-  opacity: 0;
-  padding-top: 1rem;
-}
-.mine__content4 > p{
-  opacity: 0;
-  padding-top: 1rem;
-}
-.mine__content5 > p{
-  opacity: 0;
-  padding-top: 1rem;
-}
-.mine__content6 > p{
+
+.mine__content1>p {
   opacity: 0;
   padding-top: 1rem;
 }
 
-.button__pcontent{
+.mine__content2>p {
+  opacity: 0;
+  padding-top: 1rem;
+}
+
+.mine__content3>p {
+  opacity: 0;
+  padding-top: 1rem;
+}
+
+.mine__content4>p {
+  opacity: 0;
+  padding-top: 1rem;
+}
+
+.mine__content5>p {
+  opacity: 0;
+  padding-top: 1rem;
+}
+
+.mine__content6>p {
+  opacity: 0;
+  padding-top: 1rem;
+}
+
+.button__pcontent {
   display: grid;
   font-size: 3rem;
   background-color: red;
@@ -87,7 +99,7 @@ p{
   margin: auto;
 }
 
-.button__counterp{
+.button__counterp {
   display: flex;
   width: 150px;
   align-items: center;
@@ -95,7 +107,7 @@ p{
   margin: auto;
 }
 
-h1{
+h1 {
   color: white;
   font-family: sans-serif;
   width: 35rem;
@@ -106,7 +118,7 @@ h1{
 
 }
 
-.mine__grid{
+.mine__grid {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   display: grid;
@@ -121,7 +133,7 @@ h1{
   margin-bottom: 4rem;
 }
 
-.button__grid{
+.button__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 55px 55px;
@@ -152,7 +164,7 @@ button {
   padding-right: 3rem;
 }
 
-footer{
+footer {
   background: url('/Pages/Mijn/img/vintagePaperTexture.webp');
   background-size: cover;
   background-position: center;
@@ -165,7 +177,7 @@ footer{
   box-shadow: inset 0 0 10px #000000;
 }
 
-.arrow{
+.arrow {
   float: right;
   height: 2.5rem;
   position: relative;
@@ -173,15 +185,20 @@ footer{
   bottom: 88%;
 }
 
-.mine__grid:hover{
-  cursor:url("../img/pickaxeUp.webp"), auto;
+.mine__grid:hover {
+  cursor: url("../img/pickaxeUp.webp"), auto;
 }
 
-.mine__grid:active{
-  cursor:url("../img/pickaxeDown.webp"), auto;
+.mine__grid:active {
+  cursor: url("../img/pickaxeDown.webp"), auto;
 }
 
-.mine__content1, .mine__content2, .mine__content3, .mine__content4, .mine__content5, .mine__content6 {
+.mine__content1,
+.mine__content2,
+.mine__content3,
+.mine__content4,
+.mine__content5,
+.mine__content6 {
   background-image: url("../img/stone1.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -189,39 +206,39 @@ footer{
   opacity: 0.9;
 }
 
-.stone1{
+.stone1 {
   background-image: url("../img/stone2.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.stone2{
+.stone2 {
   background-image: url("../img/stone3.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.stone3{
+.stone3 {
   background-image: url("../img/stone4.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.coltan{
+.coltan {
   background-image: url("../img/coltan.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.casserite{
+.casserite {
   background-image: url("../img/cassierite.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.wolframite{
+.wolframite {
   background-image: url("../img/wolframite.webp");
   background-size: contain;
   background-repeat: no-repeat;
@@ -236,15 +253,17 @@ footer{
   border-radius: 1rem;
 }
 
-@media only screen and (min-width: 700px){
-  .mine__grid{
+@media only screen and (min-width: 700px) {
+  .mine__grid {
     max-width: 750px;
   }
-  footer{
+
+  footer {
     max-width: 750px;
-    
+
   }
-  .grid2{
+
+  .grid2 {
     width: 685px;
   }
 }
