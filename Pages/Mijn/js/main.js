@@ -5,7 +5,7 @@ var audio2 = new Audio("audio/stone2.mp3");
 document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
 
 function redirectToNextPage() {
-  window.location.href = "./Scheiden/index.html";
+  window.location.href = "../Scheiden/index.html";
 }
 
 var audioTracker = 0;
