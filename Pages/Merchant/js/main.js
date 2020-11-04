@@ -6,7 +6,7 @@ var txt3 = 'prijs: $5 per kg ';
 var txt4 = '$ 4';
 var txt5 = '$ 2 ';
 var txt6 = '$ 2 ';
-var txt7 = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+var txt7 = '$ 8';
 var speed = 100;
 var speed1 = 500;
 var calcTracker = 0;
@@ -22,6 +22,7 @@ function typeWriter() {
     document.getElementById("demo6").innerHTML += txt4.charAt(i);
     document.getElementById("demo7").innerHTML += txt5.charAt(i);
     document.getElementById("demo8").innerHTML += txt6.charAt(i);
+    document.getElementById("demo9").innerHTML += txt7.charAt(i);
     i++;
     calcTracker++;
     setTimeout(typeWriter, speed);
