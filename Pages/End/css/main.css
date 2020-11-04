@@ -69,7 +69,7 @@ body{
     margin-left: 2rem;
     padding: 2rem;
     font-size: 2rem;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     max-width: 375px;
     margin: auto;
 }
@@ -91,6 +91,7 @@ body{
 .section__wrapper p{
     font-size: 2rem;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 /* section 3 */
 .section__3 {
@@ -126,10 +127,13 @@ body{
 }
 
 .section__textbox4 p{
+    height: 100%;
+    width: 100%;
     font-size: 1.8rem;
     color: white;
-    text-align: left;
+    text-align: center;
     line-height: normal;
+    font-family: 'Roboto', sans-serif;
 }
 
 .section__social{
@@ -151,6 +155,7 @@ body{
     font-size: 1.8rem;
     color: white;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .section__box2{
@@ -162,7 +167,6 @@ body{
 .section__box2 img{
     background-color: black;
     border-radius: 10%;
-    box-shadow: 5px 5px 5px 5px red;
     border: transparent;
 }
 
