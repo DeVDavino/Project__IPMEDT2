@@ -8,6 +8,9 @@ var textField_4 = 'Mensen worden niet voldoende uitbetaald voor de werk die ze i
 var textField_5 = 'Kinderarbeid';
 var speed = 100;
 
+
+console.log(window.scrollY);
+
 function typeWriter() {
     if (input < textFieldTime.length) {
         document.getElementById("demo0__text--js").innerHTML += textField_0.charAt(i);
@@ -20,3 +23,4 @@ function typeWriter() {
         setTimeout(typeWriter, speed);
     }
 }
+
