@@ -38,9 +38,11 @@ function typeWriter() {
     document.getElementById("demo7").innerHTML += txt5.charAt(i);
     document.getElementById("demo8").innerHTML += txt6.charAt(i);
     document.getElementById("demo9").innerHTML += txt7.charAt(i);
+    
     i++;
     calcTracker++;
     setTimeout(typeWriter, speed);
     return calcTracker;
   }
+  document.getElementById("button--js").style.opacity = '1';
 }

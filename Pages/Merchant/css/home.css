@@ -82,15 +82,15 @@ span{
     background-image: url("../img/unmute.webp");
     background-size: contain;
     margin: 0.5rem;
-  }
-  .headermute--muted{
+ }
+.headermute--muted{
     height: 4rem;
     width: 4rem;
     float: right;
     background-image: url("../img/mute.webp");
     background-size: contain;
     margin: 0.5rem;
-  }
+}
 .calc{
     width: 25rem;
     height: auto;
@@ -154,6 +154,7 @@ span{
     width: 10rem;
     height: 10rem;
     bottom: -5rem;
+    opacity: 0;
 }
 
 .container__button:hover{
@@ -171,7 +172,7 @@ button{
 }
 .arrow{
     position: relative;
-    left: 31%;
+    left: 35%;
     top: 10%;
     cursor: pointer;
     width: 40px;
