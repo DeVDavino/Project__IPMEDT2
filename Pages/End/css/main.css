@@ -172,8 +172,9 @@ body {
 
 .section__box2 img {
     background-color: black;
-    border-radius: 10%;
+    border-radius: 25%;
     border: transparent;
+
 }
 
 @media only screen and (min-width: 700px) {
