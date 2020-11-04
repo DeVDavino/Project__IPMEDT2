@@ -159,6 +159,7 @@ span{
     width: 100px;
     height: 100px;
     bottom: -50px;
+    opacity: 0;
 }
 
 .container__button:hover{
