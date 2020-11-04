@@ -16,7 +16,6 @@ function typeWriter() {
         document.getElementById("demo3__text--js").innerHTML += textField_3.charAt(i);
         document.getElementById("demo4__text--js").innerHTML += textField_4.charAt(i);
         document.getElementById("demo5__text--js").innerHTML += textField_5.charAt(i);
-
         i++;
         setTimeout(typeWriter, speed);
     }
