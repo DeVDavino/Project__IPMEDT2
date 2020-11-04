@@ -8,32 +8,16 @@ html{
     font-size: 62.5%;
 }
 /* sections */
-.section{
-    height: 100vh;
-}
-.section__1{
+body{
     background-color: black;
 }
-
+.section__1{
+    height: 100vh;
+}
 .section__2{
-    background-color: grey;
+    height: 100vh;
 }
 
-.section__3{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: black; 
-}
-
-.section__3 video{
-    grid-column: 1 / 4;
-    grid-row: 2 / 4;
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
-    
-}
 /* header */
 .logoimg{
     max-width: auto;
@@ -46,14 +30,28 @@ header{
     width: 100%;
     border-bottom: 2px solid black;
 }
-
+.smalltext{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
 /* section 1 content */
 h1{
     color: white;
     font-family: sans-serif;
     text-align: center;
-    font-size: 3rem;
-    margin-top: 3rem;
+    font-size: 2rem;
+    padding: 0.2rem;
+}
+.grid__bottomtext{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    max-width: 700px;
+    margin: auto;
 }
 .section__mineral{
     display: block;
@@ -75,12 +73,113 @@ h1{
     padding: 2rem;
     font-size: 2rem;
     font-family: sans-serif;
-    max-width: 375px;
+    max-width: 700px;
     margin: auto;
+    color: black;
 }
-.arrow{
-    width: 30px;
+/* section 2 content */
+.section__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(40,minmax);
+    grid-column-gap: 5%;
+    height: 80%;
+    max-width: 700px;
+    width: 90%;
     margin: auto;
-    margin-top: 5rem;
-    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2%;
+    border: 1px dotted white;
+    padding: 1rem;
+}
+.graph__text{
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+
+
+
+.grid__graph1{
+    grid-row: 40 / 4;
+    background-color: green;
+    border: 1px solid white;
+    color: rgb(0, 0, 255, 0);
+}
+.grid__graph2{
+    grid-row: 40 / 6;
+    background-color: green;
+    border: 1px solid white;
+    color: rgb(0, 0, 255, 0);
+}
+.grid__graph3{
+    grid-row: 40 /7;
+    background-color: green;
+    border: 1px solid white;
+    color: rgb(0, 0, 255, 0);
+}
+.grid__graph4{
+    grid-row: 40 /8;
+    background-color: green;
+    border: 1px solid white;
+    color: rgb(0, 0, 255, 0);
+}
+
+.grid__graph1:hover{
+    grid-row: 40 / 35;
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+.grid__graph2:hover{
+    grid-row: 40 / 39;
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+.grid__graph3:hover{
+    grid-row: 40 / 15;
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+.grid__graph4:hover{
+    grid-row: 40 /33;
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+
+.grid__text1, .grid__text2, .grid__text3, .grid__text4{
+    color:white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+.grid__text5, .grid__text6, .grid__text7, .grid__text8{
+    grid-row: 12;
+    height: 100%;
+    z-index: 1;
+    font-size: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+
+
+/* section 3 content */
+.section__3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: black;
+    max-width: 800px;
+    margin: auto;
+    height: auto;
+}
+
+.section__3 video{
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+    height: auto;
+    width: 100%;
+    object-fit: fill;
 }
