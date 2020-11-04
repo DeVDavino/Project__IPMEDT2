@@ -1,52 +1,46 @@
-*,
-*::before,
-*::after {
+*,*::before,*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
+html{
     font-size: 62.5%;
 }
-
 /* sections */
-.section {
+.section{
     height: 100vh;
 }
-
-.section__1 {
+.section__1{
     background-color: black;
 }
 
-.section__2 {
+.section__2{
     background-color: grey;
 }
 
-.section__3 {
+.section__3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: black;
+    background-color: black; 
 }
 
-.section__3 video {
+.section__3 video{
     grid-column: 1 / 4;
     grid-row: 2 / 4;
     height: 100%;
     width: 100%;
     object-fit: fill;
-
+    
 }
-
 /* header */
-.logoimg {
+.logoimg{
     max-width: auto;
     max-height: 4.8rem;
-    float: left;
+    float: left;  
 }
-
-header {
+header{
     background-color: grey;
     height: 5rem;
     width: 100%;
@@ -54,23 +48,21 @@ header {
 }
 
 /* section 1 content */
-h1 {
+h1{
     color: white;
     font-family: sans-serif;
     text-align: center;
     font-size: 3rem;
     margin-top: 3rem;
 }
-
-.section__mineral {
+.section__mineral{
     display: block;
     margin: auto;
     width: auto;
     margin-top: 6rem;
     height: 300px;
 }
-
-.section__textbox {
+.section__textbox{
     background-color: white;
     height: 30vh;
     text-align: left;
@@ -78,8 +70,7 @@ h1 {
     justify-content: center;
     margin-top: 2rem;
 }
-
-.section__text {
+.section__text{
     margin-left: 2rem;
     padding: 2rem;
     font-size: 2rem;
@@ -87,8 +78,7 @@ h1 {
     max-width: 375px;
     margin: auto;
 }
-
-.arrow {
+.arrow{
     width: 30px;
     margin: auto;
     margin-top: 5rem;

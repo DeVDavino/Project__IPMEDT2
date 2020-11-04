@@ -1,18 +1,15 @@
-*,
-*::before,
-*::after {
+*,*::before,*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
-html {
+html{
     font-size: 62.5%;
 }
 
-body {
+body{
     background-color: var(--background-color);
     background-image: url("../img/note.webp");
     background-position: center;
@@ -22,35 +19,35 @@ body {
     height: 100vh;
 }
 
-p {
+p{
     font-size: 2rem;
     font-family: 'Indie Flower', cursive;
 }
 
-:root {
+:root{
     --background-color: rgba(255, 255, 255, .4);
 }
 
-img {
+img{
     max-width: auto;
     max-height: 4.8rem;
-    float: left;
+    float: left;  
 }
 
-header {
+header{
     background-color: grey;
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
 }
 
-.container {
+.container{
     height: 100vh;
     width: 100%;
     position: relative;
 }
 
-h2 {
+h2{
     color: white;
     font-family: sans-serif;
     margin: auto;
@@ -60,37 +57,36 @@ h2 {
     font-size: 2rem;
 }
 
-h1 {
-    font-family: sans-serif;
+h1{
+    font-family: sans-serif;  
     font-size: 1.5rem;
     padding: 1rem;
     max-width: 800px;
     margin: auto;
 }
 
-span {
+span{
     color: red;
 }
 
-.grid__content {
+.grid__content{
     border-top: 1px solid black;
 }
 
-.container__logo {
+.container__logo{
     height: 10rem;
     width: 20rem;
-    top: 0;
+    top: 0; 
     left: 0;
 }
 
-.container__logo>img {
+.container__logo > img{
     height: 50%;
     width: 50%;
 }
-
-.container__pricegrid {
+.container__pricegrid{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
     grid-template-columns: 40% 1fr 0.5fr;
     height: 600px;
     width: 95%;
@@ -99,28 +95,28 @@ span {
 
 }
 
-.grid__content1 {
+.grid__content1{
     background-image: url("../img/coltan.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.grid__content4 {
+.grid__content4{
     background-image: url("../img/cassierite.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.grid__content7 {
+.grid__content7{
     background-image: url("../img/wolframite.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.container__button {
+.container__button{
     position: fixed;
     left: 0;
     right: 0;
@@ -133,21 +129,20 @@ span {
     bottom: -5rem;
 }
 
-.container__button:hover {
+.container__button:hover{
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-    background-color: #0EA900;
+    background-color:#0EA900;
 }
 
-button {
+button{
     position: relative;
     left: 34.5%;
     top: 30%;
     cursor: pointer;
 }
-
-.arrow {
+.arrow{
     position: relative;
     left: 31%;
     top: 10%;
@@ -158,8 +153,8 @@ button {
 
 
 @media only screen and (min-width: 700px) {
-    .container__content__text {
+    .container__content__text{
         width: 700px;
     }
-
+    
 }
