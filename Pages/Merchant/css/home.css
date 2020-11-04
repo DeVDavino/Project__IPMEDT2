@@ -156,9 +156,9 @@ span{
     margin-right: auto;
     background-color: var(--span-color);
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    bottom: -5rem;
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
     opacity: 0;
 }
 
@@ -183,7 +183,6 @@ button{
     width: 40px;
     height: auto;
 }
-
 
 @media only screen and (min-width: 700px) {
     .container__content__text{
