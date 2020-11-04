@@ -172,8 +172,21 @@ h1 {
     margin: auto;
     font-size: 1.7rem;
     text-align: center;
-    padding-top: 0.6rem;
+    padding-top: 1rem;
 }
+h2{
+    color: var(--alternatetext-color);
+    font-family: 'Allerta Stencil', sans-serif;
+    margin: auto;
+    width: 400px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+span{
+    color: var(--span-color);
+}
+
 
 .headerimg {
     max-width: auto;
