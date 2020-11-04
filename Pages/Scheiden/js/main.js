@@ -36,9 +36,6 @@ function check() {
     }
 }
 
-function redirectToNextPage() {
-    window.location.href = "../Merchant/index.html";
-}
 
 function onClickEvent1() {
     firstMineral.classList.add("container__item1--active");

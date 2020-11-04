@@ -8,6 +8,15 @@
 html{
     font-size: 62.5%;
 }
+:root{
+    --background-color: #0D0D0D;
+    --textbackground-color: #F2F2F2;
+    --span-color: #D90404;
+    --header-color: rgba(0, 0, 0, .7);
+    --alternatetext-color: #ffffff7e;
+    --green-color: #0EA900;
+    --white-text: #ffffff;
+}
 
 body{
     background-color: var(--background-color);
@@ -125,7 +134,7 @@ span{
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-    background-color:#0EA900;
+    background-color:var(--green-color);
 }
 
 button{
