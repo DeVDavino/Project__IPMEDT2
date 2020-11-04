@@ -8,7 +8,14 @@
 html{
     font-size: 62.5%;
 }
-
+:root{
+    --background-color: #0D0D0D;
+    --textbackground-color: #F2F2F2;
+    --span-color: #D90404;
+    --header-color: rgba(0, 0, 0, .7);
+    --alternatetext-color: #ffffff7e;
+    --green-color: #0EA900;
+}
 body{
     background-color: var(--background-color);
     background-image: url("../img/note.webp");
@@ -28,9 +35,6 @@ p{
     font-size: 3rem;
     text-align: center;
 }
-:root{
-    --background-color: rgba(255, 255, 255, .4);
-}
 
 img{
     max-width: auto;
@@ -39,7 +43,7 @@ img{
 }
 
 header{
-    background-color: var(--background-color);
+    background-color: var(--header-color);
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
@@ -58,7 +62,7 @@ h1{
     margin: auto;
 }
 h2{
-    color:black;
+    color:var(--background-color);
     font-family: sans-serif;
     margin: auto;
     padding: 1rem;
@@ -70,10 +74,10 @@ h3{
     font-family: 'Indie Flower', cursive;
 }
 span{
-    color: red;
+    color: var(--span-color);
 }
 .span__green{
-    color: green;
+    color: var(--green-color);
 }
 .headermute{
     height: 4rem;
@@ -95,7 +99,7 @@ span{
     width: 25rem;
     height: auto;
     margin: auto;
-    background-color: green;
+    background-color: var(--green-color);
     text-align: center;
     border-radius: 1rem;
     cursor: pointer;
@@ -150,7 +154,7 @@ span{
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    background-color: #D00000;
+    background-color: var(--span-color);
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
@@ -162,7 +166,7 @@ span{
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-    background-color:#0EA900;
+    background-color:var(--green-color);
 }
 
 button{

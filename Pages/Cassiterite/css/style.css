@@ -7,6 +7,14 @@
 html{
     font-size: 62.5%;
 }
+:root{
+    --background-color: #0D0D0D;
+    --textbackground-color: #F2F2F2;
+    --span-color: #D90404;
+    --header-color: rgba(0, 0, 0, .7);
+    --alternatetext-color: #ffffff;
+    --green-color: #0EA900;
+}
 /* sections */
 .section{
     height: 100vh;
@@ -42,7 +50,7 @@ html{
     float: left;  
 }
 header{
-    background-color: grey;
+    background-color: var(--header-color);
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
@@ -50,7 +58,7 @@ header{
 
 /* section 1 content */
 h1{
-    color: white;
+    color: var(--alternatetext-color);
     font-family: sans-serif;
     text-align: center;
     font-size: 3rem;
@@ -64,7 +72,7 @@ h1{
     height: 300px;
 }
 .section__textbox{
-    background-color: white;
+    background-color: var(--alternatetext-color);
     height: 30vh;
     text-align: left;
     opacity: 0.8;

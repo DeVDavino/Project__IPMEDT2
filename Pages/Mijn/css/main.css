@@ -10,7 +10,15 @@ html {
   font-size: 62.5%;
 
 }
-
+:root{
+  --background-color: #0D0D0D;
+  --textbackground-color: #F2F2F2;
+  --span-color: #D90404;
+  --header-color: rgba(0, 0, 0, .7);
+  --alternatetext-color: #ffffff7e;
+  --green-color: #0EA900;
+  --white-text: #ffffff;
+}
 section {
   height: 100vh;
   background-image: url("../img/mine.webp");
@@ -22,7 +30,7 @@ section {
 }
 
 header {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: var(--header-color);
   height: 5rem;
   width: 100%;
 }
@@ -52,7 +60,7 @@ img {
 }
 
 p {
-  color: white;
+  color: var(--white-text);
   font-size: 2rem;
   font-family: sans-serif;
 }
@@ -90,7 +98,7 @@ p {
 .button__pcontent {
   display: grid;
   font-size: 3rem;
-  background-color: red;
+  background-color: var(--span-color);
   border-radius: .5rem;
   border: 2px solid silver;
   box-shadow: inset 0 0 10px #000000;
@@ -108,7 +116,7 @@ p {
 }
 
 h1 {
-  color: white;
+  color: var(--white-text);
   font-family: sans-serif;
   width: 35rem;
   margin: auto;

@@ -8,8 +8,16 @@ html{
     font-size: 62.5%;
 }
 /* sections */
+:root{
+    --background-color: #0D0D0D;
+    --textbackground-color: #F2F2F2;
+    --span-color: #D90404;
+    --header-color: rgba(0, 0, 0, .7);
+    --alternatetext-color: #ffffff;
+    --green-color: #0EA900;
+}
 body{
-    background-color: black;
+    background-color: var(--background-color);
 }
 .section__1{
     height: 100vh;
@@ -25,29 +33,31 @@ body{
     float: left;  
 }
 header{
-    background-color: grey;
+    background-color: var(--header-color);
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
 }
 .smalltext{
-    color: white;
+    color: var(--alternatetext-color);
     text-align: center;
     font-size: 1.5rem;
 }
+
+
 /* section 1 content */
 h1{
-    color: white;
+    color: var(--alternatetext-color);
     font-family: sans-serif;
     text-align: center;
     font-size: 2rem;
-    padding: 0.2rem;
+    padding: 0.5rem;
 }
 .grid__bottomtext{
-    color: white;
+    color: var(--alternatetext-color);
     font-family: sans-serif;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 1rem;
     margin-top: 1rem;
     max-width: 700px;
@@ -61,8 +71,8 @@ h1{
     height: 300px;
 }
 .section__textbox{
-    background-color: white;
-    height: 30vh;
+    background-color: var(--textbackground-color);
+    height: auto;
     text-align: left;
     opacity: 0.8;
     justify-content: center;
@@ -77,6 +87,8 @@ h1{
     margin: auto;
     color: black;
 }
+
+
 /* section 2 content */
 .section__grid{
     display: grid;
@@ -90,7 +102,6 @@ h1{
     text-align: center;
     font-size: 2rem;
     margin-top: 2%;
-    border: 1px dotted white;
     padding: 1rem;
 }
 .graph__text{
@@ -98,57 +109,54 @@ h1{
     font-family: sans-serif;
 }
 
-
-
-
 .grid__graph1{
     grid-row: 40 / 4;
-    background-color: green;
-    border: 1px solid white;
+    background-color: var(--green-color);
+    border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
 }
 .grid__graph2{
     grid-row: 40 / 6;
-    background-color: green;
-    border: 1px solid white;
+    background-color: var(--green-color);
+    border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
 }
 .grid__graph3{
     grid-row: 40 /7;
-    background-color: green;
-    border: 1px solid white;
+    background-color:var(--green-color);
+    border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
 }
 .grid__graph4{
     grid-row: 40 /8;
-    background-color: green;
-    border: 1px solid white;
+    background-color: var(--green-color);
+    border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
 }
 
 .grid__graph1:hover{
     grid-row: 40 / 35;
-    background-color: red;
-    color: rgb(255, 255, 255);
+    background-color: var(--span-color);
+    color: var(--alternatetext-color);
 }
 .grid__graph2:hover{
     grid-row: 40 / 39;
-    background-color: red;
-    color: rgb(255, 255, 255);
+    background-color: var(--span-color);
+    color: var(--alternatetext-color);
 }
 .grid__graph3:hover{
     grid-row: 40 / 15;
-    background-color: red;
-    color: rgb(255, 255, 255);
+    background-color: var(--span-color);
+    color: var(--alternatetext-color);
 }
 .grid__graph4:hover{
     grid-row: 40 /33;
-    background-color: red;
-    color: rgb(255, 255, 255);
+    background-color: var(--span-color);
+    color: var(--alternatetext-color);
 }
 
 .grid__text1, .grid__text2, .grid__text3, .grid__text4{
-    color:white;
+    color: var(--alternatetext-color);
     text-align: center;
     font-family: sans-serif;
     font-size: 1.5rem;
@@ -160,7 +168,6 @@ h1{
     font-size: 2rem;
     text-align: center;
     font-family: sans-serif;
-    
 }
 
 
@@ -170,7 +177,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: black;
+    background-color: var(--background-color);
     max-width: 800px;
     margin: auto;
     height: auto;
