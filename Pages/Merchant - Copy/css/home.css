@@ -20,14 +20,10 @@ body{
 }
 
 p{
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-family: 'Indie Flower', cursive;
 }
-.grid__totalprice{
-    color: green;
-    font-size: 4rem;
-    margin: auto;
-}
+
 :root{
     --background-color: rgba(255, 255, 255, .4);
 }
@@ -39,7 +35,7 @@ img{
 }
 
 header{
-    background-color: var(--background-color);
+    background-color: grey;
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
@@ -50,13 +46,7 @@ header{
     width: 100%;
     position: relative;
 }
-h1{
-    font-family: sans-serif;  
-    font-size: 1.5rem;
-    padding: 1rem;
-    max-width: 800px;
-    margin: auto;
-}
+
 h2{
     color: white;
     font-family: sans-serif;
@@ -66,25 +56,23 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
-h3{
-    font-size: 2rem;
-    font-family: 'Indie Flower', cursive;
-}
 
+h1{
+    font-family: sans-serif;  
+    font-size: 1.5rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
 
 span{
     color: red;
 }
 
-.calc{
-    width: 25rem;
-    height: 5rem;
-    margin: auto;
-    background-color: green;
-    text-align: center;
-    padding: 0.7rem;
-    border-radius: 1rem;
+.grid__content{
+    border-top: 1px solid black;
 }
+
 .container__logo{
     height: 10rem;
     width: 20rem;
@@ -102,10 +90,9 @@ span{
     grid-template-columns: 40% 1fr 0.5fr;
     height: 600px;
     width: 95%;
-    max-width: 800px;
     margin: auto;
     margin-top: 10%;
-    border: 1px dotted black;
+
 }
 
 .grid__content1{
