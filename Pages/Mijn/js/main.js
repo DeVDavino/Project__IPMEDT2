@@ -4,15 +4,13 @@ var audio = new Audio("audio/stone.mp3");
 var audio2 = new Audio("audio/stone2.mp3");
 document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
 
-// function redirectToNextPage() {
-  
-//   window.location.href = "../Scheiden/index.html";
-// }
+function redirectToNextPage() {
+  window.location.href = "../Scheiden/index.html";
+}
 
 var audioTracker = 0;
-document.getElementById("myButton--js").disabled = true;
+// document.getElementById("myButton--js").disabled = true;
 function mute() {
-
   muteButton.classList.toggle("headermute--muted");
   if (audioTracker == 0) {
     audio.muted = true;
@@ -229,7 +227,7 @@ function onLoad() {
     document.getElementById("CounterVar--js").style.borderColor = "#00FF00";
     document.getElementById("CounterVar--js").innerHTML = "✔";
     document.getElementById("CounterVar--js").style.color = "#eeeeee";
-    document.getElementById("myButton--js").disabled = false;
+    // document.getElementById("myButton--js").disabled = false;
     
   } else {
     console.log("big error");
