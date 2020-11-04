@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* sections */
+.section {
+    height: 150vh;
+}
+
+.section__1 {
+    background-color: black;
+}
+
+.section__2 {
+    background-color: grey;
+}
+
+.section__3 {
+    background-color: blue
+}
+
+.section__4 {
+    background-color: purple;
+}
+
+.section__5 {
+    background-color: silver;
+}
