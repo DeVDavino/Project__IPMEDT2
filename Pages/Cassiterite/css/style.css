@@ -133,6 +133,7 @@ h1{
     font-size: 2rem;
     margin-top: 2%;
     padding: 1rem;
+    cursor: pointer;
 }
 .graph__text{
     font-size: 1.2rem;
@@ -145,24 +146,28 @@ h1{
     background-color: var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
+    box-shadow: 2px 2px 2px var(--alternatetext-color);
 }
 .grid__graph2{
     grid-row: 40 / 20;
     background-color: var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
+    box-shadow: 2px 2px 2px var(--alternatetext-color);
 }
 .grid__graph3{
     grid-row: 40 / 10;
     background-color:var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
+    box-shadow: 2px 2px 2px var(--alternatetext-color);
 }
 .grid__graph4{
     grid-row: 40 / 30;
     background-color: var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
+    box-shadow: 2px 2px 2px var(--alternatetext-color);
 }
 
 .grid__graph1:hover{
