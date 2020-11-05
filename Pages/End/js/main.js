@@ -4,7 +4,7 @@ var textField_1 = '- 5 miljoen doden sinds 1988(Begin Congoleese oorlog), Waarva
 var textField_2 = '- 200,000+ vrouwen en kinderen verkracht';
 var textField_3 = '- 20,000+ gorillas en andere bedreigde diersoorten gedood';
 var textField_4 = '- Mensen worden niet voldoende uitbetaald voor het werk dat ze in de mijnen verrichten';
-var textField_5 = '- Kinder worden veelvuldig gebruikt voor deze onmenselijke arbeid met een hoog sterftecijfer';
+var textField_5 = '- Kinderen worden veelvuldig gebruikt voor deze onmenselijke arbeid met een hoog sterftecijfer';
 document.getElementById("section__4--js").style.opacity = 0;
 document.getElementById("section__social--js").style.opacity = 0;
 var speed = 100;
@@ -12,10 +12,10 @@ var speed = 100;
 
 window.onscroll = function(){
     console.log(window.scrollY);
-    if(window.scrollY >= 120 && window.scrollY <= 140){
+    if(window.scrollY >= 110 && window.scrollY <= 140){
         typeWriter();
     }
-    else if(window.scrollY >= 1268){
+    else if(window.scrollY >= 1050){
         document.getElementById("section_textbox4--js").classList.add("appear");
         document.getElementById("section__box1--js").classList.add("appear");
         document.getElementById("section_box2--js").classList.add("fromLeft");
