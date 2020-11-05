@@ -274,6 +274,15 @@ a{
   text-decoration: none;
 }
 
+@media only screen and (min-width: 400px){
+  .button__counterp{
+    font-size: 1.8rem;
+  }
+  .button__pcontent{
+    margin-top: .4rem;
+  }
+}
+
 @media only screen and (min-width: 700px) {
   .mine__grid {
     max-width: 750px;
@@ -286,6 +295,9 @@ a{
   }
   h1{
     font-size: 3rem;
+  }
+  .button__grid{
+    margin-top: 2rem;
   }
 }
 /*support query voor als javascript faalt */
