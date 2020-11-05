@@ -1,10 +1,10 @@
 var i = 0;
-var textField_0 = ' 5 miljoen doden sinds 1988';
-var textField_1 = 'Waarvan 40% kind';
-var textField_2 = '200,000+ vrouwen en kinderen verkracht';
-var textField_3 = '20,000+ gorillas en andere bedreigde diersoorten gedood';
-var textField_4 = 'Mensen worden niet voldoende uitbetaald voor het werk die ze in de mijnen verrichten';
-var textField_5 = 'Kinderarbeid';
+var textField_0 = ' De feiten:';
+var textField_1 = '- 5 miljoen doden sinds 1988(Begin Congoleese oorlog), Waarvan 40% kind';
+var textField_2 = '- 200,000+ vrouwen en kinderen verkracht';
+var textField_3 = '- 20,000+ gorillas en andere bedreigde diersoorten gedood';
+var textField_4 = '- Mensen worden niet voldoende uitbetaald voor het werk dat ze in de mijnen verrichten';
+var textField_5 = '- Kinder worden veelvuldig gebruikt voor deze onmenselijke arbeid met een hoog sterftecijfer';
 document.getElementById("section__4--js").style.opacity = 0;
 document.getElementById("section__social--js").style.opacity = 0;
 var speed = 100;
