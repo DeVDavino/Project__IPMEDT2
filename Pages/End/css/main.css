@@ -24,7 +24,7 @@ header {
     background-color: var(--header-color);
     height: 5rem;
     width: 100%;
-    border-bottom: 2px solid var(--black-color);
+    border-bottom: 2px solid var(--alternatetext-color);
 }
 
 body {
@@ -39,7 +39,18 @@ body {
     max-height: 4.8rem;
     float: left;
 }
-
+h2{
+    color: var(--alternatetext-color);
+    font-family: 'Allerta Stencil', sans-serif;
+    margin: auto;
+    width: 400px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+span{
+    color: var(--span-color);
+}
 /* sections */
 .section__2,
 .section__3,
