@@ -39,7 +39,7 @@ header {
   height: 4rem;
   width: 4rem;
   float: right;
-  background-image: url("../img/unmute.webp");
+  background-image: url("../../../img/unmute.webp");
   background-size: contain;
   margin: 0.5rem;
 }
@@ -48,7 +48,7 @@ header {
   height: 4rem;
   width: 4rem;
   float: right;
-  background-image: url("../img/mute.webp");
+  background-image: url("../../../img/mute.webp");
   background-size: contain;
   margin: 0.5rem;
 }
@@ -243,21 +243,21 @@ footer {
 }
 
 .coltan {
-  background-image: url("../img/coltan.webp");
+  background-image: url("../../../img/coltan.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .casserite {
-  background-image: url("../img/cassierite.webp");
+  background-image: url("../../../img/cassierite.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .wolframite {
-  background-image: url("../img/wolframite.webp");
+  background-image: url("../../../img/wolframite.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

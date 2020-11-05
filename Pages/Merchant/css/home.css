@@ -87,7 +87,7 @@ span{
     height: 4rem;
     width: 4rem;
     float: right;
-    background-image: url("../img/unmute.webp");
+    background-image: url("../../../img/unmute.webp");
     background-size: contain;
     margin: 0.5rem;
  }
@@ -95,7 +95,7 @@ span{
     height: 4rem;
     width: 4rem;
     float: right;
-    background-image: url("../img/mute.webp");
+    background-image: url("../../../img/mute.webp");
     background-size: contain;
     margin: 0.5rem;
 }
@@ -135,21 +135,21 @@ span{
 }
 
 .grid__content1{
-    background-image: url("../img/coltan.webp");
+    background-image: url("../../../img/coltan.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .grid__content4{
-    background-image: url("../img/cassierite.webp");
+    background-image: url("../../../img/cassierite.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .grid__content7{
-    background-image: url("../img/wolframite.webp");
+    background-image: url("../../../img/wolframite.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
