@@ -22,8 +22,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: hidden;
     height: 100vh;
+}
+section{
+    margin-top: 3%;
 }
 
 p{
@@ -199,7 +201,8 @@ button{
     
 }
 
-/*support query voor als javascript faalt */
+
+/*support query zodat je naar de volgende pagina kan als javascript faalt */
 @supports  (opacity: 0) {
     .container__button {
 opacity: 1;

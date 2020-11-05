@@ -48,7 +48,7 @@ function typeWriter() {
 
 }
 
-setInterval(check, 100);
+setInterval(check, 500);
 
 function check() {
   var button = document.getElementById("button--js");
