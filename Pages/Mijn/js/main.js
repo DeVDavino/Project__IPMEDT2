@@ -4,9 +4,6 @@ var audio = new Audio("audio/stone.mp3");
 var audio2 = new Audio("audio/stone2.mp3");
 document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
 
-function redirectToNextPage() {
-  window.location.href = "../Scheiden/index.html";
-}
 
 var audioTracker = 0;
 document.getElementById("myButton--js").disabled = true;
@@ -209,8 +206,6 @@ function onClick6() {
     var results = [clicks = 0, mineralCounter];
     document.getElementById('content6--js').removeAttribute("onclick");
     document.getElementById('textAppear6').style.opacity = "1";
-  
-
   }
   return results;
 };
@@ -228,8 +223,18 @@ function onLoad() {
     document.getElementById("CounterVar--js").innerHTML = "✔";
     document.getElementById("CounterVar--js").style.color = "#eeeeee";
     document.getElementById("myButton--js").disabled = false;
-    
+  
   } else {
     console.log("big error");
   }
+}
+setInterval(check, 100);
+
+function check() {
+  var button = document.getElementById("myButton--js");
+    if (mineralCounter >= 3) {
+        button.style.opacity = '1';
+    } else {
+        button.style.opacity = '0';
+    }
 }

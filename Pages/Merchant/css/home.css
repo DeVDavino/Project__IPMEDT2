@@ -193,3 +193,11 @@ button{
     }
     
 }
+
+/*support query voor als javascript faalt */
+@supports  (opacity: 0) {
+    .container__button {
+opacity: 1;
+
+    }
+ }

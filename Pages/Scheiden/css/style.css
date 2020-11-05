@@ -229,7 +229,7 @@ span{
 }
 
 .container__item1--active {
-    transform: translate(0, 200px);
+    transform: translate(0, 500px);
     transition: all 2s;
 }
 
@@ -242,7 +242,7 @@ span{
 }
 
 .container__item2--active {
-    transform: translate(100px, 273px);
+    transform: translate(100px, 373px);
     transition: all 2s;
 }
 
@@ -334,3 +334,10 @@ span{
         background-image: url("../img/desktopBackground.webp");
     }
 }
+/*support query voor als javascript faalt */
+@supports  (opacity: 0) {
+    .container__button {
+opacity: 1;
+
+    }
+ }

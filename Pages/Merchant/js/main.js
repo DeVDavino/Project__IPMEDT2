@@ -13,6 +13,7 @@ var calcTracker = 0;
 var audio = new Audio("audio/audio3.mp3");
 var audioTracker = 0;
 
+
 function mute(){
 
 muteButton.classList.toggle("headermute--muted");
@@ -44,5 +45,16 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
     return calcTracker;
   }
-  document.getElementById("button--js").style.opacity = '1';
+
+}
+
+setInterval(check, 100);
+
+function check() {
+  var button = document.getElementById("button--js");
+    if (calcTracker >= 1) {
+        button.style.opacity = '1';
+    } else {
+        button.style.opacity = '0';
+    }
 }
