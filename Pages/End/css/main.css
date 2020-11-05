@@ -10,27 +10,34 @@ html {
     font-size: 62.5%;
 }
 
+:root{
+    --background-color: #0D0D0D;
+    --textbackground-color: #F2F2F2;
+    --span-color: #D90404;
+    --header-color: rgba(0, 0, 0, .7);
+    --alternatetext-color: #ffffff;
+    --green-color: #0EA900;
+    --black-color: #000000;
+}
+
 header {
     background-color: var(--header-color);
     height: 5rem;
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--black-color);
 }
 
 body {
     height: 100vh;
     width: 100%;
     margin: auto;
-    background-color: black;
+    background-color: var(--black-color);
 }
 
 
-:root {
-    --header-color: rgba(0, 0, 0, .7);
-}
+
 
 .logoimg {
-    max-width: auto;
     max-height: 4.8rem;
     float: left;
 }
@@ -44,17 +51,12 @@ body {
 
 /* Section 1 */
 .section__1 {
-    /* background-image: url("../img/Frank_Piasecki_teaser.webp");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    object-fit: fill; */
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: black;
+    background-color: var(--black-color);
     height: 100vh;
     display: grid;
-    border-radius: 1%;
+    border-radius: .5%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
@@ -72,31 +74,44 @@ body {
     height: 100%;
     width: 100%;
     background-size: cover;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    transform-origin: center;
+    animation-delay: 0.8s;
+    animation-fill-mode: backwards;
 }
 
 .section__textbox1 {
     grid-column: 1;
     grid-row: 4;
-    background-color: rgba(255, 255, 255, .9);
-    height: 20vh;
+    height: calc(100vh/4);
     text-align: left;
     opacity: 0.7;
     justify-content: center;
+    background-color: var(--black-color);
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+    animation-delay: 0.8s;
 
 }
 
 .section__text {
+    color: var(--alternatetext-color);
     margin-left: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
-    max-width: 375px;
+    max-width: 100%;
+    max-height: 100%;
     margin: auto;
 }
 
 /* Section 2 */
 .section__2 {
-    background-color: black;
+    background-color: var(--black-color);
     display: grid;
     grid-template-columns: 5% 90% 5%;
     grid-template-rows: 10% 80% 10%;
@@ -111,18 +126,18 @@ body {
 
 .section__wrapper p {
     font-size: 2rem;
-    color: white;
+    color: var(--span-color);
     font-family: 'Roboto', sans-serif;
 }
 
 /* section 3 */
 .section__3 {
-    background-color: black;
+    background-color: var(--black-color);
     height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: black;
+
 }
 
 .section__3 video {
@@ -134,7 +149,7 @@ body {
 }
 
 .section__4 {
-    background-color: black;
+    background-color: var(--black-color);
     display: grid;
     grid-template-columns: 5% 90% 5%;
     grid-template-rows: 2.5% 60% 35% 2.5%;
@@ -153,7 +168,7 @@ body {
     height: 100%;
     width: 100%;
     font-size: 1.8rem;
-    color: white;
+    color: var(--alternatetext-color);
     text-align: center;
     line-height: normal;
     font-family: 'Roboto', sans-serif;
@@ -178,7 +193,7 @@ body {
 
 .section__box1 h2 {
     font-size: 1.8rem;
-    color: white;
+    color: var(--alternatetext-color);
     text-align: center;
     font-family: 'Roboto', sans-serif;
 
@@ -193,7 +208,7 @@ body {
 }
 
 .section__box2 img {
-    background-color: black;
+    background-color: var(--black-color);
     border-radius: 25%;
     border: transparent;
 
