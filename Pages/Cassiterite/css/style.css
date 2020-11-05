@@ -30,7 +30,6 @@ body{
 
 /* header */
 .logoimg{
-    max-width: auto;
     max-height: 4.5rem;
     float: left;  
 }
@@ -124,7 +123,7 @@ h1{
 .section__grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(40,minmax);
+    grid-template-rows: repeat(40, 1fr);
     grid-column-gap: 5%;
     height: 80%;
     max-width: 700px;
