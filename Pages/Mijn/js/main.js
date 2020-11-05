@@ -223,7 +223,6 @@ function onLoad() {
     document.getElementById("CounterVar--js").innerHTML = "✔";
     document.getElementById("CounterVar--js").style.color = "#eeeeee";
     document.getElementById("myButton--js").disabled = false;
-  
   } else {
     console.log("big error");
   }
