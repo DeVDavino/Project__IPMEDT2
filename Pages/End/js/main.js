@@ -5,14 +5,26 @@ var textField_2 = '200,000+ vrouwen en kinderen verkracht';
 var textField_3 = '20,000+ gorillas en andere bedreigde diersoorten gedood';
 var textField_4 = 'Mensen worden niet voldoende uitbetaald voor het werk die ze in de mijnen verrichten';
 var textField_5 = 'Kinderarbeid';
+document.getElementById("section__4--js").style.opacity = 0;
+document.getElementById("section__social--js").style.opacity = 0;
 var speed = 100;
 
+
 window.onscroll = function(){
+    console.log(window.scrollY);
     if(window.scrollY >= 120 && window.scrollY <= 140){
         typeWriter();
     }
-}
+    else if(window.scrollY >= 1268){
+        document.getElementById("section_textbox4--js").classList.add("appear");
+        document.getElementById("section__box1--js").classList.add("appear");
+        document.getElementById("section_box2--js").classList.add("fromBottom");
+        document.getElementById("section__4--js").style.opacity = 1;
+        document.getElementById("section__social--js").style.opacity = 1;
 
+    }
+
+}
 
 function typeWriter() {
     if (i < textField_4.length) {

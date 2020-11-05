@@ -26,7 +26,7 @@ body {
 
 
 :root {
-    --header-color: rgba(0, 0, 0, .6);
+    --header-color: rgba(0, 0, 0, .7);
 }
 
 .logoimg {
@@ -44,15 +44,17 @@ body {
 
 /* Section 1 */
 .section__1 {
-    background-image: url("../img/frankiee.webp");
-    background-position: center;
+    background-image: url("../img/Frank_Piasecki_teaser.webp");
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 400px 812px;
+    object-fit: fill;
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: black;
     height: 100vh;
     display: grid;
+    border-radius: 1%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
@@ -130,6 +132,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .section__textbox4 p {
@@ -140,6 +143,7 @@ body {
     text-align: center;
     line-height: normal;
     font-family: 'Roboto', sans-serif;
+
 }
 
 .section__social {
@@ -150,6 +154,7 @@ body {
     grid-template-rows: 2;
     grid-column: 2;
     grid-row: 3;
+
 }
 
 .section__social img {
@@ -162,12 +167,15 @@ body {
     color: white;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+
 }
+
 
 .section__box2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
 .section__box2 img {
@@ -188,5 +196,43 @@ body {
     .section__4 {
         margin: auto;
         max-width: 700px;
+    }
+}
+
+.appear {
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    transform-origin: center;
+    animation-delay: 0.8s;
+    animation-fill-mode: backwards;
+}
+
+.fromBottom {
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+    animation-delay: 0.8s;
+}
+
+
+@keyframes appear {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        transform: translateX(-80rem);
+    }
+
+    to {
+        transform: translate(0);
     }
 }
