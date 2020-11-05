@@ -121,7 +121,6 @@ header{
     left: 0;
     right: 0;
     margin-left: auto;
-    margin-right: auto;
     background-color: var(--span-color);
     border-radius: 50%;
     width: 10rem;
