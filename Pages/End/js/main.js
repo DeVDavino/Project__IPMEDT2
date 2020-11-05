@@ -18,7 +18,7 @@ window.onscroll = function(){
     else if(window.scrollY >= 1268){
         document.getElementById("section_textbox4--js").classList.add("appear");
         document.getElementById("section__box1--js").classList.add("appear");
-        document.getElementById("section_box2--js").classList.add("fromBottom");
+        document.getElementById("section_box2--js").classList.add("fromLeft");
         document.getElementById("section__4--js").style.opacity = 1;
         document.getElementById("section__social--js").style.opacity = 1;
 
