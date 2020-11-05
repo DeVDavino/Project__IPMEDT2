@@ -69,6 +69,9 @@ footer {
     max-width: 375px;
     margin: auto;
     height: 800px;
+    background-color: var(--background-color);
+    background: url('../img/vintageBackground.webp');
+   
 }
 
 .footer__grid {
@@ -83,10 +86,9 @@ footer {
     padding: 2rem;
     box-shadow: inset 0 0 10px #000000;
     border: 10px solid;
-    border-image: url('../img/stoneBorderBackground.webp') 100 100 round;
-    background: url('../img/vintageBackground.webp');
     background-size: cover;
     background-position: center;
+    border-image: url('../img/stoneBorderBackground.webp') 100 100 round;
     background-repeat: no-repeat;
 }
 
@@ -304,9 +306,10 @@ span{
     justify-content: flex-end;
 }
 
+
 .card__counter>p {
     color: var(--white-text);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 @media only screen and (min-width: 700px) {
