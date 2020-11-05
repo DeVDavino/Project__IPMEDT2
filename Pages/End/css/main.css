@@ -44,11 +44,11 @@ body {
 
 /* Section 1 */
 .section__1 {
-    background-image: url("../img/Frank_Piasecki_teaser.webp");
+    /* background-image: url("../img/Frank_Piasecki_teaser.webp");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    object-fit: fill;
+    object-fit: fill; */
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: black;
@@ -60,10 +60,24 @@ body {
 
 }
 
+.section__image{
+    height: 100%;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1 / 4;
+
+}
+
+.section__image img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
 .section__textbox1 {
     grid-column: 1;
     grid-row: 4;
-    background-color: #eeeeee;
+    background-color: rgba(255, 255, 255, .9);
     height: 20vh;
     text-align: left;
     opacity: 0.7;
@@ -185,29 +199,6 @@ body {
 
 }
 
-@media only screen and (min-width: 600px){
-    .section__1{
-        background-size: contain;
-    }
-}
-@media only screen and (min-width: 700px) {
-    header {
-        width: 100%;
-    }
-
-    .section__1,
-    .section__2,
-    .section__3,
-    .section__4 {
-        margin: auto;
-        max-width: 700px;
-    }
-}
-
-@media only screen and (min-width: 1000px){
-    
-}
-
 .appear {
     animation-name: appear;
     animation-duration: 1s;
@@ -226,22 +217,61 @@ body {
 }
 
 
-@keyframes appear {
-    from {
-        transform: scale(0)
+@media only screen and (min-width: 400px) {
+    @keyframes appear {
+        from {
+            transform: scale(0)
+        }
+    
+        to {
+            transform: scale(1);
+        }
     }
-
-    to {
-        transform: scale(1);
+    
+    @keyframes fromLeft {
+        from {
+            transform: translateX(-80rem);
+        }
+    
+        to {
+            transform: translate(0);
+        }
     }
 }
 
-@keyframes fromLeft {
-    from {
-        transform: translateX(-80rem);
+
+@media only screen and (min-width: 700px) {
+    header {
+        width: 100%;
     }
 
-    to {
-        transform: translate(0);
+    .section__1,
+    .section__2,
+    .section__3,
+    .section__4 {
+        margin: auto;
+        max-width: 700px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1920px){
+    @keyframes appear {
+        from {
+            transform: scale(0)
+        }
+    
+        to {
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes fromLeft {
+        from {
+            transform: translateX(-160rem);
+        }
+    
+        to {
+            transform: translate(0);
+        }
     }
 }
