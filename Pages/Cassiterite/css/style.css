@@ -25,6 +25,7 @@ body{
 .section__2{
     height: 100vh;
     padding: 1rem;
+    margin-bottom: 5rem;
 }
 
 /* header */
@@ -80,7 +81,7 @@ h1{
     display: block;
     margin: auto;
     width: auto;
-    margin-top: 6rem;
+    margin-top: 2rem;
     height: 300px;
 }
 .section__textbox{
@@ -119,52 +120,53 @@ h1{
     padding: 1rem;
 }
 .graph__text{
-    padding: 1rem;
+    font-size: 1.2rem;
     font-family: sans-serif;
+    padding: 0.2rem;
 }
 
 .grid__graph1{
-    grid-row: 40 / 4;
+    grid-row: 40 / 39;
     background-color: var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
 }
 .grid__graph2{
-    grid-row: 40 / 6;
+    grid-row: 40 / 20;
     background-color: var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
 }
 .grid__graph3{
-    grid-row: 40 /7;
+    grid-row: 40 / 10;
     background-color:var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
 }
 .grid__graph4{
-    grid-row: 40 /8;
+    grid-row: 40 / 30;
     background-color: var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
 }
 
 .grid__graph1:hover{
-    grid-row: 40 / 35;
-    background-color: var(--span-color);
-    color: var(--alternatetext-color);
-}
-.grid__graph2:hover{
     grid-row: 40 / 39;
     background-color: var(--span-color);
     color: var(--alternatetext-color);
 }
+.grid__graph2:hover{
+    grid-row: 40 / 20;
+    background-color: var(--span-color);
+    color: var(--alternatetext-color);
+}
 .grid__graph3:hover{
-    grid-row: 40 / 15;
+    grid-row: 40 / 10;
     background-color: var(--span-color);
     color: var(--alternatetext-color);
 }
 .grid__graph4:hover{
-    grid-row: 40 /33;
+    grid-row: 40 / 30;
     background-color: var(--span-color);
     color: var(--alternatetext-color);
 }
