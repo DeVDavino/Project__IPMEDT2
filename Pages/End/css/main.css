@@ -43,7 +43,6 @@ h2{
     color: var(--alternatetext-color);
     font-family: 'Allerta Stencil', sans-serif;
     margin: auto;
-    width: 400px;
     padding: 1rem;
     text-align: center;
     font-size: 2rem;
@@ -279,7 +278,6 @@ span{
     top: 75%;
     animation: bounce 1.5s ease infinite;
     font-family: sans-serif;
-    z-index: 1;
   }
   
   @keyframes bounce {
