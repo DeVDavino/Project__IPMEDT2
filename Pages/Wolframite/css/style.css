@@ -74,6 +74,37 @@ span{
     background: #4caf50;
     width: 0%;
 }
+/* scroll indicator */
+.top-panel {
+    width: 100%;
+  }
+  .top-panel::before{
+    content: 'V';
+    color: var(--alternatetext-color);
+    position: absolute;
+    opacity: 0.7;
+    font-size: 4rem;
+    width: 6rem;
+    height: 4rem;
+    text-align: center;
+    bottom: calc(100vh - 70%);
+    left: 85%;
+    right: 0;
+    margin: 0 auto;
+    top: 22rem;
+    animation: bounce 1.5s ease infinite;
+    font-family: sans-serif;
+    z-index: 1;
+  }
+  
+  @keyframes bounce {
+    50% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 
 /* section 1 content */
