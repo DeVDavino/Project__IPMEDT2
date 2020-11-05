@@ -173,9 +173,10 @@ button{
 h1 {
     color: var(--white-text);
     font-family: sans-serif;
-    width: 35rem;
+    width: auto;
+    max-width: 700px;
     margin: auto;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
     padding-top: 1rem;
 }
@@ -278,7 +279,7 @@ span{
 }
 
 .container__item5--active {
-    transform: translate(0px, 200px);
+    transform: translate(0px, 300px);
     transition: all 2s;
 }
 
@@ -291,7 +292,7 @@ span{
 }
 
 .container__item6--active {
-    transform: translate(-50px, 300px);
+    transform: translate(-50px, 400px);
     transition: all 2s;
 }
 

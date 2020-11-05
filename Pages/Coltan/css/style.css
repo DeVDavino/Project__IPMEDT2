@@ -29,7 +29,7 @@ body{
 /* header */
 .logoimg{
     max-width: auto;
-    max-height: 4.8rem;
+    max-height: 4.5rem;
     float: left;  
 }
 header{
@@ -37,6 +37,10 @@ header{
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
+    position: fixed;
+    margin-bottom: 5rem;
+    opacity: 1;
+    z-index: 1;
 }
 .smalltext{
     color: var(--alternatetext-color);
@@ -56,6 +60,19 @@ h2{
     color: var(--span-color);
   }
 
+/* scroll indicator */
+.progress__container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+
+.progress__bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+}
 
 /* section 1 content */
 h1{
@@ -63,7 +80,8 @@ h1{
     font-family: sans-serif;
     text-align: center;
     font-size: 2rem;
-    padding: 0.5rem;
+    padding-top: 6rem;
+    z-index: 1;
 }
 .grid__bottomtext{
     color: var(--alternatetext-color);
@@ -80,7 +98,7 @@ h1{
     margin: auto;
     width: auto;
     margin-top: 6rem;
-    height: 300px;
+    height: 350px;
 }
 .section__textbox{
     background-color: var(--textbackground-color);
