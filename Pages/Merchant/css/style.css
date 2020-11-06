@@ -217,11 +217,20 @@ button {
     .container__content__text {
         width: 700px;
     }
+    .header__text > h1{
+        font-size: 1.6rem;
+    }
 
     html {
         font-size: 80%;
     }
 
+}
+
+@media only screen and (min-width: 1000px){
+    .header__text > h1{
+        font-size: 2rem;
+    }
 }
 
 /*support query zodat je naar de volgende pagina kan als javascript faalt */
