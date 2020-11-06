@@ -39,7 +39,6 @@ function check() {
 
 function onClickEvent(thisElement) {
     audio.play();
-    console.log(clicks);
     clicks++;
     if(thisElement.id == "container__item--1"){
         thisElement.classList.add("container__item1--active");
