@@ -4,6 +4,7 @@ var audio = new Audio("audio/stone.mp3");
 var audio2 = new Audio("audio/stone2.mp3");
 var i = 0;
 document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
+var x = 0;
 
 
 var audioTracker = 0;
@@ -43,21 +44,21 @@ function onClick(thisElement) {
     return clicks;
 
   } else if (clicks = 3) {
-    if(thisElement.id == "content1--js"){
+    if(thisElement.id == "content1--js") {
       thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
       thisElement.classList.add("coltan");
       document.getElementById('textAppear1').style.opacity = "1";
       thisElement.removeAttribute("onclick");
       mineralCounter++;
       document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
-    }else if(thisElement.id == "content2--js"){
+    }else if(thisElement.id == "content2--js") {
       thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
       thisElement.classList.add("wolframite");
       document.getElementById('textAppear2').style.opacity = "1";
       thisElement.removeAttribute("onclick");
       mineralCounter++;
       document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
-    }else if(thisElement.id == "content3--js"){
+    }else if(thisElement.id == "content3--js") {
       thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
       thisElement.classList.add("casserite");
       document.getElementById('textAppear3').style.opacity = "1";
@@ -65,12 +66,11 @@ function onClick(thisElement) {
       mineralCounter++;
       document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
     }
-    else if(thisElement.id == "content--js"){
+    else if(thisElement.id == "content--js") {
       thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
       thisElement.classList.add("empty");
-      document.getElementsByClassName("textappear")[i].style.opacity = 1;
+      thisElement.getElementsByClassName("textappear")[i].style.opacity = 1;
       thisElement.removeAttribute("onclick");
-      i++;
     }
     audio2.play();
     var results = [clicks = 0, mineralCounter];
