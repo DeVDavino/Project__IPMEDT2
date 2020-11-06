@@ -2,6 +2,7 @@ var clicks = 0;
 var mineralCounter = 0;
 var audio = new Audio("audio/stone.mp3");
 var audio2 = new Audio("audio/stone2.mp3");
+var i = 0;
 document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
 
 
@@ -22,195 +23,60 @@ function mute() {
 
 }
 
-//grid mining functies 1-6
-function onClick1() {
-
-  console.log(clicks);
-  var element = document.getElementById("content1--js");
+// grid functie
+function onClick(thisElement) {
   if (clicks <= 0) {
-    element.classList.add("stone1");
+    thisElement.classList.add("stone1");
     clicks += 1;
     audio.play();
     return clicks;
-
   } else if (clicks <= 1) {
-    element.classList.toggle("stone2");
+    thisElement.classList.toggle("stone2");
     audio.play();
     clicks += 1;
     return clicks;
 
   } else if (clicks <= 2) {
-    element.classList.toggle("stone3");
+    thisElement.classList.toggle("stone3");
     audio.play();
     clicks += 1;
     return clicks;
 
   } else if (clicks = 3) {
-    element.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1")
-    element.classList.add("coltan");
+    if(thisElement.id == "content1--js"){
+      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
+      thisElement.classList.add("coltan");
+      document.getElementById('textAppear1').style.opacity = "1";
+      thisElement.removeAttribute("onclick");
+      mineralCounter++;
+      document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
+    }else if(thisElement.id == "content2--js"){
+      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
+      thisElement.classList.add("wolframite");
+      document.getElementById('textAppear2').style.opacity = "1";
+      thisElement.removeAttribute("onclick");
+      mineralCounter++;
+      document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
+    }else if(thisElement.id == "content3--js"){
+      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
+      thisElement.classList.add("casserite");
+      document.getElementById('textAppear3').style.opacity = "1";
+      thisElement.removeAttribute("onclick");
+      mineralCounter++;
+      document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
+    }
+    else if(thisElement.id == "content--js"){
+      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
+      thisElement.classList.add("empty");
+      document.getElementsByClassName("textappear")[i].style.opacity = 1;
+      thisElement.removeAttribute("onclick");
+      i++;
+    }
     audio2.play();
-    mineralCounter++;
     var results = [clicks = 0, mineralCounter];
-    document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
-    document.getElementById('content1--js').removeAttribute("onclick");
-    document.getElementById('textAppear1').style.opacity = "1";
   }
   return results;
 };
-
-function onClick2() {
-
-  console.log(clicks);
-  var element = document.getElementById("content2--js");
-  if (clicks <= 0) {
-    element.classList.add("stone1");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks <= 1) {
-    element.classList.toggle("stone2");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks <= 2) {
-    element.classList.toggle("stone3");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks = 3) {
-    element.classList.remove("stone1", "stone2", "stone3", "mine__grid__content2")
-    element.classList.add("empty");
-    audio2.play();
-    var results = [clicks = 0, mineralCounter];
-    document.getElementById('content2--js').removeAttribute("onclick");
-    document.getElementById('textAppear2').style.opacity = "1";
-
-  }
-  return results;
-
-};
-
-function onClick3() {
-  console.log(clicks);
-  var element = document.getElementById("content3--js");
-  if (clicks <= 0) {
-    element.classList.add("stone1");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks <= 1) {
-    element.classList.toggle("stone2");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks <= 2) {
-    element.classList.toggle("stone3");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks = 3) {
-    element.classList.remove("stone1", "stone2", "stone3", "mine__grid__content3")
-    element.classList.add("empty");
-    audio2.play();
-    var results = [clicks = 0, mineralCounter];
-    document.getElementById('content3--js').removeAttribute("onclick");
-    document.getElementById('textAppear3').style.opacity = "1";
-  }
-  return results;
-};
-
-function onClick4() {
-  console.log(clicks);
-  var element = document.getElementById("content4--js");
-  if (clicks <= 0) {
-    element.classList.add("stone1");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks <= 1) {
-    element.classList.toggle("stone2");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks <= 2) {
-    element.classList.toggle("stone3");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks = 3) {
-    element.classList.remove("stone1", "stone2", "stone3", "mine__grid__content4")
-    element.classList.add("wolframite");
-    audio2.play();
-    mineralCounter++;
-    var results = [clicks = 0, mineralCounter];
-    document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
-    document.getElementById('content4--js').removeAttribute("onclick");
-    document.getElementById('textAppear4').style.opacity = "1";
-  }
-  return results;
-};
-
-function onClick5() {
-  console.log(clicks);
-  var element = document.getElementById("content5--js");
-  if (clicks <= 0) {
-    element.classList.add("stone1");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks <= 1) {
-    element.classList.toggle("stone2");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks <= 2) {
-    element.classList.toggle("stone3");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks = 3) {
-    element.classList.remove("stone1", "stone2", "stone3", "mine__grid__content5")
-    element.classList.add("casserite");
-    audio2.play();
-    mineralCounter++;
-    var results = [clicks = 0, mineralCounter];
-    document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
-    document.getElementById('content5--js').removeAttribute("onclick");
-    document.getElementById('textAppear5').style.opacity = "1";
-  }
-
-  return results;
-};
-
-function onClick6() {
-  console.log(clicks);
-  var element = document.getElementById("content6--js");
-  if (clicks <= 0) {
-    element.classList.add("stone1");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks <= 1) {
-    element.classList.toggle("stone2");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks <= 2) {
-    element.classList.toggle("stone3");
-    clicks += 1;
-    audio.play();
-    return clicks;
-  } else if (clicks = 3) {
-    element.classList.remove("stone1", "stone2", "stone3", "mine__grid__content6")
-    element.classList.add("empty");
-    audio2.play();
-    var results = [clicks = 0, mineralCounter];
-    document.getElementById('content6--js').removeAttribute("onclick");
-    document.getElementById('textAppear6').style.opacity = "1";
-  }
-  return results;
-};
-//einde grid mining functie
 
 // Mineralen checken + button laten verschijnen
 setInterval(onLoad, 500);
@@ -224,9 +90,7 @@ function onLoad() {
     document.getElementById("CounterVar--js").innerHTML = "✔";
     document.getElementById("CounterVar--js").style.color = "#eeeeee";
     document.getElementById("myButton--js").disabled = false;
-  } else {
-    console.log("big error");
-  }
+  } 
 }
 setInterval(check, 100);
 
