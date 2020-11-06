@@ -140,7 +140,8 @@ span{
 .section__wrapper p {
     font-size: 2rem;
     color: var(--span-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+
 }
 
 .section__textbox2 p {
