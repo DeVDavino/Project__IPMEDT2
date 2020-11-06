@@ -131,6 +131,7 @@ footer {
 
 .footer__counter {
     color: white;
+    font-family: 'Play', sans-serif;
     position: absolute;
     width: 5rem;
     height: 2rem;
@@ -139,7 +140,6 @@ footer {
     justify-content: center;
     text-align: center;
     vertical-align: center;
-    color: var(--background-color);
     font-size: 1.6rem;
 }
 
