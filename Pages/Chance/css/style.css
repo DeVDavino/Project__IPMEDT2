@@ -91,7 +91,7 @@ span {
     top: 7rem;
 }
 
-.container__title>h1 {
+.container__title > h1 {
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 3rem;
     padding: .2rem;
@@ -110,7 +110,7 @@ span {
     box-shadow: inset 0 0 10px var(--background-color);
 }
 
-.container__text>p {
+.container__text > p {
     font-family: 'Roboto', sans-serif;
     max-width: 375px;
     font-size: 1.8rem;
