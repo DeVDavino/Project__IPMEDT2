@@ -94,7 +94,7 @@ footer {
 .mineral {
     text-align: left;
     font-family: 'Play', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     float: left;
     color: var(--white-text);
     grid-column: 1;
