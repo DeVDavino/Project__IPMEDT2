@@ -11,7 +11,6 @@ var speed = 100;
 
 
 window.onscroll = function(){
-    console.log(window.scrollY);
     if(window.scrollY >= 110 && window.scrollY <= 140){
         typeWriter();
     }
