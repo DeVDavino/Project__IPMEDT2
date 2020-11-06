@@ -113,11 +113,6 @@ span {
     margin: 0.5rem;
 }
 
-.header__text > h1{
-    font-family: 'Play', sans-serif;
-
-}
-
 .calc {
     width: 25rem;
     height: auto;
