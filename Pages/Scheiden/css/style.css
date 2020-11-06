@@ -130,6 +130,7 @@ footer {
 }
 
 .footer__counter {
+    color: white;
     position: absolute;
     width: 5rem;
     height: 2rem;
