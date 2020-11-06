@@ -1,14 +1,17 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
+
 /* sections */
-:root{
+:root {
     --background-color: #0D0D0D;
     --textbackground-color: #F2F2F2;
     --span-color: #D90404;
@@ -17,25 +20,29 @@ html{
     --green-color: #0EA900;
     --black-color: #000000;
 }
-body{
+
+body {
     background-color: var(--background-color);
     overflow-x: hidden;
 }
-.section__1{
+
+.section__1 {
     height: 100vh;
 }
-.section__2{
+
+.section__2 {
     height: 100vh;
     padding: 1rem;
     margin-bottom: 5rem;
 }
 
 /* header */
-.logoimg{
+.logoimg {
     max-height: 4.5rem;
-    float: left;  
+    float: left;
 }
-header{
+
+header {
     background-color: var(--black-color);
     height: 5rem;
     width: 100%;
@@ -45,12 +52,14 @@ header{
     opacity: 1;
     z-index: 1;
 }
-.smalltext{
+
+.smalltext {
     color: var(--alternatetext-color);
     text-align: center;
     font-size: 1.5rem;
 }
-h2{
+
+h2 {
     color: var(--alternatetext-color);
     font-family: 'Allerta Stencil', sans-serif;
     margin: auto;
@@ -59,9 +68,11 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
-span{
+
+span {
     color: var(--span-color);
 }
+
 /* scroll indicator */
 .progress__container {
     width: 100%;
@@ -74,11 +85,13 @@ span{
     background: #4caf50;
     width: 0%;
 }
+
 /* scroll indicator */
 .top-panel {
     width: 100%;
-  }
-  .top-panel::before{
+}
+
+.top-panel::before {
     content: 'V';
     color: var(--alternatetext-color);
     position: absolute;
@@ -95,27 +108,29 @@ span{
     animation: bounce 1.5s ease infinite;
     font-family: sans-serif;
     z-index: 1;
-  }
-  
-  @keyframes bounce {
+}
+
+@keyframes bounce {
     50% {
-      transform: translateY(-50%);
+        transform: translateY(-50%);
     }
+
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
+}
 
 
 /* section 1 content */
-h1{
+h1 {
     color: var(--alternatetext-color);
     font-family: sans-serif;
     text-align: center;
     font-size: 2rem;
     padding-top: 6rem;
 }
-.grid__bottomtext{
+
+.grid__bottomtext {
     color: var(--alternatetext-color);
     font-family: sans-serif;
     text-align: center;
@@ -125,34 +140,40 @@ h1{
     max-width: 700px;
     margin: auto;
 }
-.section__mineral{
+
+.section__mineral {
     display: block;
     margin: auto;
     width: auto;
     margin-top: 6rem;
     height: 250px;
 }
-.section__textbox{
+
+.section__textbox {
     background-color: var(--textbackground-color);
     height: auto;
     text-align: left;
     opacity: 0.8;
     justify-content: center;
     margin-top: 2rem;
+    box-shadow: inset 0 0 10px var(--background-color);
 }
-.section__text{
+
+.section__text {
     margin-left: 2rem;
     padding: 1rem;
     font-size: 1.8rem;
     font-family: sans-serif;
     max-width: 700px;
     margin: auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: normal;
     color: black;
 }
 
 
 /* section 2 content */
-.section__grid{
+.section__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(40, 1fr);
@@ -167,33 +188,37 @@ h1{
     padding: 1rem;
     cursor: pointer;
 }
-.graph__text{
+
+.graph__text {
     padding: 1rem;
     font-family: sans-serif;
 }
 
-.grid__graph1{
+.grid__graph1 {
     grid-row: 40 / 4;
     background-color: var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
     box-shadow: 2px 2px 2px var(--alternatetext-color);
 }
-.grid__graph2{
+
+.grid__graph2 {
     grid-row: 40 / 35;
     background-color: var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
     box-shadow: 2px 2px 2px var(--alternatetext-color);
 }
-.grid__graph3{
+
+.grid__graph3 {
     grid-row: 40 /15;
-    background-color:var(--green-color);
+    background-color: var(--green-color);
     border: 1px solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
     box-shadow: 2px 2px 2px var(--alternatetext-color);
 }
-.grid__graph4{
+
+.grid__graph4 {
     grid-row: 40 /39;
     background-color: var(--green-color);
     border: 1px solid var(--alternatetext-color);
@@ -201,34 +226,44 @@ h1{
     box-shadow: 2px 2px 2px var(--alternatetext-color);
 }
 
-.grid__graph1:hover{
+.grid__graph1:hover {
     grid-row: 40 / 4;
     background-color: var(--span-color);
     color: var(--alternatetext-color);
 }
-.grid__graph2:hover{
+
+.grid__graph2:hover {
     grid-row: 40 / 35;
     background-color: var(--span-color);
     color: var(--alternatetext-color);
 }
-.grid__graph3:hover{
+
+.grid__graph3:hover {
     grid-row: 40 / 15;
     background-color: var(--span-color);
     color: var(--alternatetext-color);
 }
-.grid__graph4:hover{
+
+.grid__graph4:hover {
     grid-row: 40 /39;
     background-color: var(--span-color);
     color: var(--alternatetext-color);
 }
 
-.grid__text1, .grid__text2, .grid__text3, .grid__text4{
+.grid__text1,
+.grid__text2,
+.grid__text3,
+.grid__text4 {
     color: var(--alternatetext-color);
     text-align: center;
     font-family: sans-serif;
     font-size: 1.5rem;
 }
-.grid__text5, .grid__text6, .grid__text7, .grid__text8{
+
+.grid__text5,
+.grid__text6,
+.grid__text7,
+.grid__text8 {
     grid-row: 12;
     height: 100%;
     z-index: 1;
@@ -240,7 +275,7 @@ h1{
 
 
 /* section 3 content */
-.section__3{
+.section__3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -251,14 +286,15 @@ h1{
     margin-bottom: 5rem;
 }
 
-.section__3 video{
+.section__3 video {
     grid-column: 1 / 4;
     grid-row: 1 / 5;
     height: auto;
     width: 100%;
     object-fit: fill;
 }
-.container__button{
+
+.container__button {
     position: fixed;
     left: 0;
     right: 0;
@@ -269,20 +305,22 @@ h1{
     height: 10rem;
     bottom: -5rem;
 }
-.container__button:hover{
+
+.container__button:hover {
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-    background-color:var(--green-color);
+    background-color: var(--green-color);
 }
 
-button{
+button {
     position: relative;
     left: 34.5%;
     top: 30%;
     cursor: pointer;
 }
-.arrow{
+
+.arrow {
     position: relative;
     left: 31%;
     top: 10%;
@@ -292,7 +330,7 @@ button{
 }
 
 @media only screen and (min-width: 600px) {
-    .section__1{
+    .section__1 {
         height: 80vh;
     }
-  }
+}

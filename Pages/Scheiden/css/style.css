@@ -22,7 +22,7 @@ body {
     background-image: url("../img/mobileBackground.webp");
 }
 
-:root{
+:root {
     --background-color: #0D0D0D;
     --textbackground-color: #F2F2F2;
     --span-color: #D90404;
@@ -71,7 +71,7 @@ footer {
     height: 800px;
     background-color: var(--background-color);
     background: url('../img/vintageBackground.webp');
-   
+
 }
 
 .footer__grid {
@@ -136,7 +136,7 @@ footer {
     font-size: 1.6rem;
 }
 
-.container__button{
+.container__button {
     position: fixed;
     left: 0;
     right: 0;
@@ -149,14 +149,14 @@ footer {
     opacity: 0;
 }
 
-.container__button:hover{
+.container__button:hover {
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-    background-color:var(--green-color);
+    background-color: var(--green-color);
 }
 
-.arrow{
+.arrow {
     position: relative;
     left: 31%;
     top: 10%;
@@ -164,6 +164,7 @@ footer {
     width: 40px;
     height: auto;
 }
+
 h1 {
     color: var(--white-text);
     font-family: sans-serif;
@@ -174,7 +175,8 @@ h1 {
     text-align: center;
     padding-top: 1rem;
 }
-h2{
+
+h2 {
     color: var(--alternatetext-color);
     font-family: 'Allerta Stencil', sans-serif;
     margin: auto;
@@ -183,8 +185,9 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
-span{
-    color:var(--span-color);
+
+span {
+    color: var(--span-color);
 }
 
 
@@ -324,22 +327,24 @@ span{
     body {
         background-image: url("../img/desktopBackground.webp");
     }
-    
+
 }
+
 @media only screen and (min-width: 900px) {
     body {
         background-image: url("../img/desktopBackground.webp");
     }
-    h1{
+
+    h1 {
         font-size: 2.5rem;
         max-width: 900px;
-      }
+    }
 }
 
 /*support query voor als javascript faalt */
-@supports  (opacity: 0) {
+@supports (opacity: 0) {
     .container__button {
-opacity: 1;
+        opacity: 1;
 
     }
- }
+}

@@ -103,9 +103,11 @@ span{
     animation-timing-function: ease;
     animation-fill-mode: backwards;
     animation-delay: 0.5s;
+    box-shadow:  inset 0 0 10px var(--background-color);
 }
 .section__textbox1 p{
     font-size: 1.7rem;
+
 }
 
 

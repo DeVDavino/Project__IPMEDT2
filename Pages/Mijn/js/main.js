@@ -7,6 +7,7 @@ document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
 
 var audioTracker = 0;
 document.getElementById("myButton--js").disabled = true;
+
 function mute() {
   muteButton.classList.toggle("headermute--muted");
   if (audioTracker == 0) {
@@ -231,9 +232,9 @@ setInterval(check, 100);
 
 function check() {
   var button = document.getElementById("myButton--js");
-    if (mineralCounter >= 3) {
-        button.style.opacity = '1';
-    } else {
-        button.style.opacity = '0';
-    }
+  if (mineralCounter >= 3) {
+    button.style.opacity = '1';
+  } else {
+    button.style.opacity = '0';
+  }
 }

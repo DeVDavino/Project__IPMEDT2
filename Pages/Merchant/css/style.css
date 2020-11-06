@@ -1,14 +1,16 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-html{
+html {
     font-size: 62.5%;
 }
-:root{
+
+:root {
     --background-color: #0D0D0D;
     --textbackground-color: #F2F2F2;
     --span-color: #D90404;
@@ -16,7 +18,8 @@ html{
     --alternatetext-color: #ffffff7e;
     --green-color: #0EA900;
 }
-body{
+
+body {
     background-color: var(--background-color);
     background-image: url("../img/note.webp");
     background-position: center;
@@ -24,74 +27,84 @@ body{
     background-size: cover;
     height: 100vh;
 }
-section{
+
+section {
     margin-top: 3%;
 }
 
-p{
+p {
     font-size: 2rem;
     font-family: 'Indie Flower', cursive;
 }
-.grid__totalprice{
-    color:var(--green-color);
+
+.grid__totalprice {
+    color: var(--green-color);
     font-size: 3rem;
     text-align: center;
 }
 
-img{
+img {
     max-height: 4.8rem;
-    float: left;  
+    float: left;
 }
 
-header{
+header {
     background-color: var(--header-color);
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
 }
 
-.container{
+.container {
     height: 100vh;
     width: 100%;
     position: relative;
 }
-.grid__redtext{
+
+.grid__redtext {
     color: var(--span-color);
 }
-h1{
-    font-family: sans-serif;  
+
+h1 {
+    font-family: sans-serif;
     font-size: 1.2rem;
     padding: 1rem;
     max-width: 800px;
     margin: auto;
 }
-h2{
-    color:var(--background-color);
+
+h2 {
+    color: var(--background-color);
     font-family: sans-serif;
     margin: auto;
     padding: 1rem;
     text-align: center;
     font-size: 2rem;
 }
-h3{
+
+h3 {
     font-size: 1.5rem;
     font-family: 'Indie Flower', cursive;
 }
-span{
+
+span {
     color: var(--span-color);
 }
-.span__green{
+
+.span__green {
     color: var(--green-color);
 }
-.headermute{
+
+.headermute {
     height: 4rem;
     width: 4rem;
     float: right;
     background-image: url("../../../img/unmute.webp");
     background-size: contain;
     margin: 0.5rem;
- }
-.headermute--muted{
+}
+
+.headermute--muted {
     height: 4rem;
     width: 4rem;
     float: right;
@@ -99,7 +112,8 @@ span{
     background-size: contain;
     margin: 0.5rem;
 }
-.calc{
+
+.calc {
     width: 25rem;
     height: auto;
     margin: auto;
@@ -108,23 +122,27 @@ span{
     border-radius: 1rem;
     cursor: pointer;
 }
-.calc:hover, .calc:active{
+
+.calc:hover,
+.calc:active {
     box-shadow: inset 0 0 10px #000000;
 }
-.container__logo{
+
+.container__logo {
     height: 10rem;
     width: 20rem;
-    top: 0; 
+    top: 0;
     left: 0;
 }
 
-.container__logo > img{
+.container__logo>img {
     height: 50%;
     width: 50%;
 }
-.container__pricegrid{
+
+.container__pricegrid {
     display: grid;
-    grid-template-rows:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 38% 1fr 0.5fr;
     height: 50%;
     width: 95%;
@@ -134,28 +152,28 @@ span{
     text-align: center;
 }
 
-.grid__content1{
+.grid__content1 {
     background-image: url("../../../img/coltan.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.grid__content4{
+.grid__content4 {
     background-image: url("../../../img/cassierite.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.grid__content7{
+.grid__content7 {
     background-image: url("../../../img/wolframite.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.container__button{
+.container__button {
     position: fixed;
     left: 0;
     right: 0;
@@ -168,20 +186,21 @@ span{
     opacity: 0;
 }
 
-.container__button:hover{
+.container__button:hover {
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
-    background-color:var(--green-color);
+    background-color: var(--green-color);
 }
 
-button{
+button {
     position: relative;
     left: 34.5%;
     top: 30%;
     cursor: pointer;
 }
-.arrow{
+
+.arrow {
     position: relative;
     left: 31%;
     top: 10%;
@@ -191,20 +210,20 @@ button{
 }
 
 @media only screen and (min-width: 700px) {
-    .container__content__text{
+    .container__content__text {
         width: 700px;
     }
-    html{
+
+    html {
         font-size: 80%;
     }
-    
+
 }
 
-
 /*support query zodat je naar de volgende pagina kan als javascript faalt */
-@supports  (opacity: 0) {
+@supports (opacity: 0) {
     .container__button {
-opacity: 1;
+        opacity: 1;
 
     }
- }
+}
