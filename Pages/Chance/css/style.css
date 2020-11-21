@@ -155,11 +155,25 @@ button {
     height: auto;
 }
 
+@media only screen and (min-width: 400px){
+    .container__text{
+        height: 200px;
+    }
+    .container__text > p{
+        font-size: 15px;
 
+    }
+}
 @media only screen and (min-width: 600px) {
     .container__content {
         max-width: 50%;
         margin: auto;
+    }
+
+    .container__text > p{
+        font-size: 18px;
+        max-width: 750px;
+        padding: 2rem;
     }
 
     body {
