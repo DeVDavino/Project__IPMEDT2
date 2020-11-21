@@ -66,12 +66,15 @@ header {
 }
 
 footer {
-    max-width: 375px;
-    margin: auto;
-    height: 800px;
+    width: 375px;
     background-color: var(--background-color);
     background: url('../img/vintageBackground.webp');
-
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .footer__grid {
@@ -227,6 +230,8 @@ span {
     background: url('../img/cassierite.webp');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+    align-items: stretch;
 }
 
 .container__item1--active {
@@ -239,6 +244,7 @@ span {
     grid-row: 2;
     background: url('../img/coltan.webp');
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -251,6 +257,7 @@ span {
     grid-column: 3;
     grid-row: 3;
     background: url('../img/coltan.webp');
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -264,6 +271,7 @@ span {
     grid-column: 2;
     grid-row: 3;
     background: url('../img/cassierite.webp');
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -277,6 +285,7 @@ span {
     grid-column: 2;
     grid-row: 2;
     background: url('../img/wolframite.webp');
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -290,6 +299,7 @@ span {
     grid-column: 3;
     grid-row: 1;
     background: url('../img/wolframite.webp');
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -315,26 +325,24 @@ span {
 
 @media only screen and (min-width: 700px) {
     .container__grid {
-        max-width: 600px;
+        max-width: 80%;
         max-height: 750px;
-        width: 80%;
     }
 
     .grid2 {
         width: 685px;
     }
 
-    footer {
-        height: 800px;
-        margin-top: 200px;
-    }
+
 }
 
 @media only screen and (min-width: 500px) {
     body {
         background-image: url("../img/desktopBackground.webp");
     }
-
+    .container__grid {
+        height: 700px;
+}
 }
 
 @media only screen and (min-width: 900px) {
@@ -346,6 +354,9 @@ span {
         font-size: 2.5rem;
         max-width: 900px;
     }
+    .container__grid {
+        height: 900px;
+}
 }
 
 /*support query voor als javascript faalt */

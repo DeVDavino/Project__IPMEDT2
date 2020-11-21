@@ -60,14 +60,13 @@ img {
 
 p {
   color: var(--white-text);
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: 'Play', sans-serif;
-  margin-top: 25%;
 }
 
 .mine__content>p {
   opacity: 0;
-  padding-top: 1rem;
+  margin-top: 10%;
 }
 
 .button__pcontent {
@@ -97,7 +96,7 @@ h1 {
   font-family: 'Play', sans-serif;
   width: 100%;
   margin: auto;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   padding-top: 0.6rem;
 }
@@ -127,11 +126,6 @@ span{
   grid-column-gap: 1rem;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
-}
-
-.mine__content> p{
-  font-family: 'Play', sans-serif;
-
 }
 
 .button {
@@ -203,19 +197,19 @@ footer {
   opacity: 0.9;
 }
 
-.stone1 {
+.stone--1 {
   background-image: url("../img/stone2.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.stone2 {
+.stone--2 {
   background-image: url("../img/stone3.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.stone3 {
+.stone--3 {
   background-image: url("../img/stone4.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -254,9 +248,6 @@ a{
 }
 
 @media only screen and (min-width: 400px){
-  .button__counterp{
-    font-size: 1.8rem;
-  }
   .button__pcontent{
     margin-top: .4rem;
   }
@@ -264,17 +255,15 @@ a{
 
 @media only screen and (min-width: 700px) {
   .mine {
-    max-width: 750px;
+    max-width: 80%;
   }
   footer {
-    max-width: 750px;
+    max-width: 80%;
   }
   .grid2 {
-    width: 685px;
+    width: 80%;
   }
-  h1{
-    font-size: 3rem;
-  }
+
   .button__grid{
     margin-top: 2rem;
   }
