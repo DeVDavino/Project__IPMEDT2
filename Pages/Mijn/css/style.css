@@ -65,32 +65,32 @@ p {
   margin-top: 25%;
 }
 
-.mine__content1>p {
+.mine__content--1>p {
   opacity: 0;
   padding-top: 1rem;
 }
 
-.mine__content2>p {
+.mine__content--2>p {
   opacity: 0;
   padding-top: 1rem;
 }
 
-.mine__content3>p {
+.mine__content--3>p {
   opacity: 0;
   padding-top: 1rem;
 }
 
-.mine__content4>p {
+.mine__content--4>p {
   opacity: 0;
   padding-top: 1rem;
 }
 
-.mine__content5>p {
+.mine__content--5>p {
   opacity: 0;
   padding-top: 1rem;
 }
 
-.mine__content6>p {
+.mine__content--6>p {
   opacity: 0;
   padding-top: 1rem;
 }
@@ -139,7 +139,7 @@ span{
   color: var(--span-color);
 }
 
-.mine__grid {
+.mine {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   display: grid;
@@ -159,7 +159,7 @@ span{
 
 }
 
-.button__grid {
+.button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 55px 55px;
@@ -181,7 +181,6 @@ span{
   font-size: 1.8rem;
   font-weight: 500;
   font-family: 'Play', sans-serif;
-
   color: white;
   border: 2px solid white;
   border-radius: 1rem;
@@ -210,20 +209,20 @@ footer {
 }
 
 
-.mine__grid:hover {
+.mine:hover {
   cursor: url("../img/pickaxeUp.webp"), auto;
 }
 
-.mine__grid:active {
+.mine:active {
   cursor: url("../img/pickaxeDown.webp"), auto;
 }
 
-.mine__content1,
-.mine__content2,
-.mine__content3,
-.mine__content4,
-.mine__content5,
-.mine__content6 {
+.mine__content--1,
+.mine__content--2,
+.mine__content--3,
+.mine__content--4,
+.mine__content--5,
+.mine__content--6 {
   background-image: url("../img/stone1.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -291,7 +290,7 @@ a{
 }
 
 @media only screen and (min-width: 700px) {
-  .mine__grid {
+  .mine {
     max-width: 750px;
   }
   footer {

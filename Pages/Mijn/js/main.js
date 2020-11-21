@@ -45,21 +45,21 @@ function onClick(thisElement) {
 
   } else if (clicks = 3) {
     if(thisElement.id == "content1--js") {
-      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
+      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__content1");
       thisElement.classList.add("coltan");
       document.getElementById('textAppear1').style.opacity = "1";
       thisElement.removeAttribute("onclick");
       mineralCounter++;
       document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
     }else if(thisElement.id == "content2--js") {
-      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
+      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__content1");
       thisElement.classList.add("wolframite");
       document.getElementById('textAppear2').style.opacity = "1";
       thisElement.removeAttribute("onclick");
       mineralCounter++;
       document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
     }else if(thisElement.id == "content3--js") {
-      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
+      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__content1");
       thisElement.classList.add("casserite");
       document.getElementById('textAppear3').style.opacity = "1";
       thisElement.removeAttribute("onclick");
@@ -67,7 +67,7 @@ function onClick(thisElement) {
       document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
     }
     else if(thisElement.id == "content--js") {
-      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__grid__content1");
+      thisElement.classList.remove("stone1", "stone2", "stone3", "mine__content1");
       thisElement.classList.add("empty");
       thisElement.getElementsByClassName("textappear")[i].style.opacity = 1;
       thisElement.removeAttribute("onclick");
