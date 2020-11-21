@@ -65,32 +65,7 @@ p {
   margin-top: 25%;
 }
 
-.mine__content--1>p {
-  opacity: 0;
-  padding-top: 1rem;
-}
-
-.mine__content--2>p {
-  opacity: 0;
-  padding-top: 1rem;
-}
-
-.mine__content--3>p {
-  opacity: 0;
-  padding-top: 1rem;
-}
-
-.mine__content--4>p {
-  opacity: 0;
-  padding-top: 1rem;
-}
-
-.mine__content--5>p {
-  opacity: 0;
-  padding-top: 1rem;
-}
-
-.mine__content--6>p {
+.mine__content>p {
   opacity: 0;
   padding-top: 1rem;
 }
@@ -217,12 +192,10 @@ footer {
   cursor: url("../img/pickaxeDown.webp"), auto;
 }
 
-.mine__content--1,
-.mine__content--2,
-.mine__content--3,
-.mine__content--4,
-.mine__content--5,
-.mine__content--6 {
+.mine__content--coltan,
+.mine__content--wolframite,
+.mine__content--cassiterite,
+.mine__content--leeg {
   background-image: url("../img/stone1.webp");
   background-size: cover;
   background-repeat: no-repeat;
