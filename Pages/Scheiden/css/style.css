@@ -64,7 +64,8 @@ header {
     background-size: contain;
     margin: 0.5rem;
 }
-
+/* deze moet aangepast */
+/*  dpr 1 1px = telefoon pixel  3,5 - 5. 1px = 3,5px 125 rem/em */
 footer {
     width: 375px;
     background-color: var(--background-color);

@@ -138,7 +138,7 @@ span {
     transition-duration: 0.2s;
     background-color: var(--green-color);
 }
-
+/* deze moet aangepast */
 button {
     position: relative;
     left: 34.5%;
