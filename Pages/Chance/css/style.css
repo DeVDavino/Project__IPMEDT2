@@ -48,7 +48,7 @@ body {
     float: left;
 }
 
-h2 {
+.header__text {
     color: var(--alternatetext-color);
     font-family: sans-serif;
     margin: auto;
@@ -59,7 +59,7 @@ h2 {
     font-family: 'Allerta Stencil', sans-serif;
 }
 
-span {
+.header__text > span {
     color: var(--span-color);
 }
 
@@ -109,33 +109,30 @@ span {
 
 }
 
-.container__button {
+.button {
     position: fixed;
     left: 0;
     right: 0;
     margin-left: auto;
-    background-color: var(--span-color);
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
     bottom: -5rem;
 }
 
-.container__button:hover {
+.button--red{
+    background-color: var(--span-color);
+}
+
+.button--hover:hover {
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
     background-color: var(--green-color);
 }
-/* deze moet aangepast */
-button {
-    position: relative;
-    left: 34.5%;
-    top: 30%;
-    cursor: pointer;
-}
 
-.arrow {
+
+.button__arrow {
     position: relative;
     left: 31%;
     top: 10%;
@@ -145,21 +142,21 @@ button {
 }
 
 @media only screen and (min-width: 400px){
-    .container__text{
+    .content__text{
         height: 200px;
     }
-    .container__text > p{
+    .content__text > p{
         font-size: 15px;
 
     }
 }
 @media only screen and (min-width: 600px) {
-    .container__content {
+    .content__content {
         max-width: 50%;
         margin: auto;
     }
 
-    .container__text > p{
+    .content__text > p{
         font-size: 18px;
         max-width: 750px;
         padding: 2rem;
