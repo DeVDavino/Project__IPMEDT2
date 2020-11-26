@@ -58,7 +58,7 @@ body {
     font-size: 2rem;
 }
 
-span{
+.header__text span{
     color: var(--span-color);
 }
 
@@ -97,7 +97,7 @@ span{
     width: 100vw;
 }
 
-.content__text>p {
+.content__text > p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     line-height: normal;
@@ -105,6 +105,10 @@ span{
     color: var(--background-color);
     max-width: 80rem;
     margin: auto;
+}
+
+.content__text  span{
+    color: var(--span-color);
 }
 
 .button {
