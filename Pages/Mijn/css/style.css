@@ -96,7 +96,7 @@ h1 {
   font-family: 'Play', sans-serif;
   width: 100%;
   margin: auto;
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-align: center;
   padding-top: 0.6rem;
 }
@@ -263,9 +263,11 @@ a{
   .grid2 {
     width: 80%;
   }
-
   .button__grid{
     margin-top: 2rem;
+  }
+  h1{
+    font-size: 3rem;
   }
 }
 /*support query voor als javascript faalt */
