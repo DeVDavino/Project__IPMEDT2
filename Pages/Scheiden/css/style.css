@@ -36,7 +36,7 @@ p {
     font-size: 1.7rem;
 }
 
-section {
+main {
     height: 100vh;
     overflow-y: hidden;
 }
@@ -66,8 +66,8 @@ header {
 }
 /* deze moet aangepast */
 /*  dpr 1 1px = telefoon pixel  3,5 - 5. 1px = 3,5px 125 rem/em */
-footer {
-    width: 375px;
+.footer {
+    width: 37.5rem;
     background-color: var(--background-color);
     background: url('../img/vintageBackground.webp');
     position: fixed;
@@ -95,7 +95,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-.mineral {
+.footer__mineral {
     text-align: left;
     font-family: 'Play', sans-serif;
     font-size: 2rem;
@@ -105,7 +105,7 @@ footer {
     grid-row: 1;
 }
 
-.mineral__counter {
+.footer__counter2 {
     font-family: 'Play', sans-serif;
     color: var(--white-text);
     grid-column: 2;
@@ -119,16 +119,15 @@ footer {
 }
 
 .scale {
-    display: grid;
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     grid-row: 2;
     color: var(--white-text);
-    width: 120px;
-    height: 100px;
+    width: 12rem;
+    height: 10rem;
     margin: auto;
 }
 
-.wrapper {
+.u-wrapper {
     position: relative;
     overflow: hidden;
 }
@@ -147,7 +146,7 @@ footer {
     font-size: 1.6rem;
 }
 
-.container__button {
+.footer__button {
     position: fixed;
     left: 0;
     right: 0;
@@ -310,19 +309,6 @@ span {
     transition: all 2s;
 }
 
-.card__counter {
-    color: var(--white-text);
-    font-size: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-
-.card__counter>p {
-    color: var(--white-text);
-    font-size: 4rem;
-}
 
 @media only screen and (min-width: 700px) {
     .container__grid {
@@ -362,7 +348,7 @@ span {
 
 /*support query voor als javascript faalt */
 @supports (opacity: 0) {
-    .container__button {
+    .footer__button {
         opacity: 1;
 
     }

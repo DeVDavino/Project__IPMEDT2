@@ -5,7 +5,7 @@ var forthMineral = document.getElementById('container__item--4');
 var fifthMineral = document.getElementById('container__item--5');
 var sixthMineral = document.getElementById('container__item--6');
 let itemsContainer = document.getElementById('dropbox');
-var paragraph = document.getElementById('mineral__counter--js');
+var paragraph = document.getElementById('footer__counter--js');
 var button = document.getElementById('button--js');
 var muteButton = document.getElementById('muteButton');
 var clicks = 0;
@@ -53,8 +53,8 @@ function onClickEvent(thisElement) {
     }else if(thisElement.id == "container__item--6"){
         thisElement.classList.add("container__item6--active");
     }
-    document.getElementById("mineral__counter--js").innerHTML = clicks;
-    document.getElementById("mineral__counter2--js").innerHTML = clicks / 5 + " kg";
+    document.getElementById("footer__counter--js").innerHTML = clicks;
+    document.getElementById("footer__counter2--js").innerHTML = clicks / 5 + " kg";
     thisElement.removeAttribute("onclick");
     thisElement.style.opacity = "0";
     return clicks;
