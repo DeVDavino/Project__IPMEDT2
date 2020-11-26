@@ -227,6 +227,10 @@ button {
     .header__text{
         font-size: 1.4rem;
     }
+    h3, p{
+        font-size: 3rem;
+
+    }
 }
 
 @media only screen and (min-width: 1000px){

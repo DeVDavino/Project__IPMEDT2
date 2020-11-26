@@ -107,7 +107,6 @@ h1 {
 .section__mineral {
     display: block;
     margin: auto;
-    max-width: auto;
     margin-top: 2rem;
     height: 350px;
 }
@@ -184,6 +183,7 @@ h1 {
     margin-top: 2%;
     padding: 1rem;
     cursor: pointer;
+    list-style: none;
 }
 
 .graph__text {
@@ -292,7 +292,7 @@ h1 {
     object-fit: fill;
 }
 
-.container__button {
+.section__button {
     position: fixed;
     left: 0;
     right: 0;
@@ -304,7 +304,7 @@ h1 {
     bottom: -5rem;
 }
 
-.container__button:hover {
+.section__button:hover {
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
