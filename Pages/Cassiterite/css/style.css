@@ -43,7 +43,7 @@ header {
     background-color: var(--header-color);
     height: 5rem;
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 0.2rem solid black;
     position: fixed;
     margin-bottom: 5rem;
     opacity: 1;
@@ -60,7 +60,7 @@ h2 {
     color: var(--alternatetext-color);
     font-family: 'Allerta Stencil', sans-serif;
     margin: auto;
-    width: 400px;
+    width: 40rem;
     padding: 1rem;
     text-align: center;
     font-size: 2rem;
@@ -73,13 +73,13 @@ span {
 /* scroll indicator */
 .progress__container {
     width: 100%;
-    height: 8px;
+    height: 0.8rem;
     background: #ccc;
 }
 
 
 .progress__bar {
-    height: 8px;
+    height: 0.8rem;
     background: #4caf50;
     width: 0%;
 }
@@ -100,7 +100,7 @@ h1 {
     font-size: 1.5rem;
     padding: 1rem;
     margin-top: 1rem;
-    max-width: 700px;
+    max-width: 70rem;
     margin: auto;
 }
 
@@ -108,7 +108,7 @@ h1 {
     display: block;
     margin: auto;
     margin-top: 2rem;
-    height: 350px;
+    height: 35rem;
 }
 
 .section__textbox {
@@ -119,7 +119,7 @@ h1 {
     justify-content: center;
     margin-top: 2rem;
     width: 100%;
-    box-shadow: inset 0 0 10px var(--background-color);
+    box-shadow: inset 0 0 1rem var(--background-color);
 }
 
 .section__text {
@@ -127,7 +127,7 @@ h1 {
     padding: 1rem;
     font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
-    max-width: 700px;
+    max-width: 70rem;
     margin: auto;
     line-height: normal;
     color: black;
@@ -175,7 +175,7 @@ h1 {
     grid-template-rows: repeat(40, 1fr);
     grid-column-gap: 5%;
     height: 80%;
-    max-width: 700px;
+    max-width: 70rem;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -195,33 +195,33 @@ h1 {
 .grid__graph1 {
     grid-row: 40 / 39;
     background-color: var(--green-color);
-    border: 1px solid var(--alternatetext-color);
+    border: 0.1rem solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
-    box-shadow: 2px 2px 2px var(--alternatetext-color);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--alternatetext-color);
 }
 
 .grid__graph2 {
     grid-row: 40 / 20;
     background-color: var(--green-color);
-    border: 1px solid var(--alternatetext-color);
+    border: 0.1rem solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
-    box-shadow: 2px 2px 2px var(--alternatetext-color);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--alternatetext-color);
 }
 
 .grid__graph3 {
     grid-row: 40 / 10;
     background-color: var(--green-color);
-    border: 1px solid var(--alternatetext-color);
+    border: 0.1rem solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
-    box-shadow: 2px 2px 2px var(--alternatetext-color);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--alternatetext-color);
 }
 
 .grid__graph4 {
     grid-row: 40 / 30;
     background-color: var(--green-color);
-    border: 1px solid var(--alternatetext-color);
+    border: 0.1rem solid var(--alternatetext-color);
     color: rgb(0, 0, 255, 0);
-    box-shadow: 2px 2px 2px var(--alternatetext-color);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--alternatetext-color);
 }
 
 .grid__graph1:hover {
@@ -278,7 +278,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: var(--background-color);
-    max-width: 800px;
+    max-width: 80rem;
     margin: auto;
     height: auto;
     margin-bottom: 5rem;
@@ -323,11 +323,11 @@ button {
     left: 31%;
     top: 10%;
     cursor: pointer;
-    width: 40px;
+    width: 4rem;
     height: auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 60rem) {
     .section__1 {
         height: 80vh;
     }

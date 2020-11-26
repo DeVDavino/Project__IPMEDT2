@@ -52,7 +52,7 @@ body {
     color: var(--alternatetext-color);
     font-family: 'Allerta Stencil', sans-serif;
     margin: auto;
-    width: 400px;
+    width: 40rem;
     padding: 1rem;
     text-align: center;
     font-size: 2rem;
@@ -93,7 +93,7 @@ span{
     padding: 1.6rem;
     background-color: var(--textbackground-color);
     opacity: 0.7;
-    box-shadow: inset 0 0 10px var(--background-color);
+    box-shadow: inset 0 0 1rem var(--background-color);
     width: 100vw;
 }
 
@@ -103,7 +103,7 @@ span{
     line-height: normal;
     text-align: left;
     color: var(--background-color);
-    max-width: 800px;
+    max-width: 80rem;
     margin: auto;
 }
 
@@ -134,11 +134,11 @@ span{
     left: 31%;
     top: 10%;
     cursor: pointer;
-    width: 40px;
+    width: 4rem;
     height: auto;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 70rem) {
    p{
        max-width: 120rem;
    }
