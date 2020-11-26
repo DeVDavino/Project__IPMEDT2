@@ -216,9 +216,8 @@ span {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr));
-    height: 475px;
     max-width: 90%;
-    border-radius: 5%;
+    height: 475px;
     background-size: cover;
     padding: 1rem;
     margin: auto;
@@ -314,7 +313,7 @@ span {
 @media only screen and (min-width: 700px) {
     .container__grid {
         max-width: 80%;
-        max-height: 750px;
+        max-height: 650px;
     }
 
     .grid2 {
