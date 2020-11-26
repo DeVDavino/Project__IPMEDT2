@@ -29,16 +29,16 @@ if(audioTracker == 0){
 function typeWriter() {
   if (i < txt7.length) {
     audio.play();
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    document.getElementById("demo1").innerHTML += txt.charAt(i);
-    document.getElementById("demo2").innerHTML += txt.charAt(i);
-    document.getElementById("demo3").innerHTML += txt1.charAt(i);
-    document.getElementById("demo4").innerHTML += txt2.charAt(i);
-    document.getElementById("demo5").innerHTML += txt3.charAt(i);
-    document.getElementById("demo6").innerHTML += txt4.charAt(i);
-    document.getElementById("demo7").innerHTML += txt5.charAt(i);
-    document.getElementById("demo8").innerHTML += txt6.charAt(i);
-    document.getElementById("demo9").innerHTML += txt7.charAt(i);
+    document.getElementById("js--demo").innerHTML += txt.charAt(i);
+    document.getElementById("js--demo1").innerHTML += txt.charAt(i);
+    document.getElementById("js--demo2").innerHTML += txt.charAt(i);
+    document.getElementById("js--demo3").innerHTML += txt1.charAt(i);
+    document.getElementById("js--demo4").innerHTML += txt2.charAt(i);
+    document.getElementById("js--demo5").innerHTML += txt3.charAt(i);
+    document.getElementById("js--demo6").innerHTML += txt4.charAt(i);
+    document.getElementById("js--demo7").innerHTML += txt5.charAt(i);
+    document.getElementById("js--demo8").innerHTML += txt6.charAt(i);
+    document.getElementById("js--demo9").innerHTML += txt7.charAt(i);
     
     i++;
     calcTracker++;

@@ -48,14 +48,14 @@ img {
     float: left;
 }
 
-header {
+.header {
     background-color: var(--header-color);
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid black;
 }
 
-.container {
+.u-container {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -65,14 +65,11 @@ header {
     color: var(--span-color);
 }
 
-h1 {
-    font-family: sans-serif;
-    font-size: 1.2rem;
-    padding: 1rem;
-    max-width: 800px;
+h1{
+    padding: 0.8rem;
+    max-width: 80rem;
     margin: auto;
 }
-
 h2 {
     color: var(--background-color);
     font-family: sans-serif;
@@ -113,8 +110,17 @@ span {
     margin: 0.5rem;
 }
 
-.header__text > h1{
+.header__text {
     font-family: 'Play', sans-serif;
+    font-size: 1.4rem;
+}
+.calc_dagloon{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+.bottom__text{
+    font-family: sans-serif;
+    font-size: 1.2rem;
 }
 
 .calc {
@@ -150,27 +156,28 @@ span {
     grid-template-columns: 38% 1fr 0.5fr;
     height: 50%;
     width: 95%;
-    max-width: 800px;
+    max-width: 80rem;
     margin: auto;
     margin-top: 1%;
     text-align: center;
+    list-style: none;
 }
 
-.grid__content1 {
+.grid__content--1 {
     background-image: url("../../../img/coltan.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.grid__content4 {
+.grid__content--4 {
     background-image: url("../../../img/cassierite.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.grid__content7 {
+.grid__content--7 {
     background-image: url("../../../img/wolframite.webp");
     background-size: contain;
     background-repeat: no-repeat;
@@ -184,9 +191,9 @@ span {
     margin-left: auto;
     background-color: var(--span-color);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    bottom: -50px;
+    width: 10rem;
+    height: 10rem;
+    bottom: -5rem;
     opacity: 0;
 }
 
@@ -215,20 +222,15 @@ button {
 
 @media only screen and (min-width: 700px) {
     .container__content__text {
-        width: 700px;
+        width: 70rem;
     }
-    .header__text > h1{
-        font-size: 1.6rem;
+    .header__text{
+        font-size: 1.4rem;
     }
-
-    html {
-        font-size: 80%;
-    }
-
 }
 
 @media only screen and (min-width: 1000px){
-    .header__text > h1{
+    .header__text, .calc__dagloon, .bottom__text{
         font-size: 2rem;
     }
 }

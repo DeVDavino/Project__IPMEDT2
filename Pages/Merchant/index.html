@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- LANGUAGE OP NL EN DOOR DE VALIDATOR HALEN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -18,118 +18,83 @@
 
 <body>
 
-    <div class="container">
-        <!-- u-container -->
-        <header>
-            <!-- header is op tag niveau gestyled -->
-            <a href='/index.html'>
+    <div class="u-container">
+
+        <header class="header">
+
+            <a href='../../index.html'>
                 <img src="../../img/logo.webp" alt="logo">
             </a>
             <div onclick="mute()" class="headermute" id="muteButton"></div>
             <h2><span>Blood</span> in the mobile</h2>
-
         </header>
-
-        <!-- dan klopt deze niet -->
-        <div class="header__text">
-            <h1>Chance heeft zijn lading van vandaag gescheden, en levert deze in bij de rebellen die de mijn controleren.
+        <div>
+            <h1 class="header__text">Chance heeft zijn lading van vandaag gescheden, en levert deze in bij de
+                rebellen
+                die de mijn
+                controleren.
                 Een eerlijke prijs zal hij niet krijgen, maar ander opties heeft hij niet.
             </h1>
         </div>
-
         <div class="calc" onclick="typeWriter()">
-            <!-- meerdere h1's niet op TAGS STYLEN  -->
-            <h1>Bereken je dagloon</h1>
+            <h1 class="calc__dagloon">Bereken je dagloon</h1>
         </div>
-
-        <div class="grid container__pricegrid">
-            <div class="grid__content grid__content1"></div>
-            <div class="grid__content grid__content2">
-
-
+        <ul class="container__pricegrid">
+            <li class="grid__content--1"></li>
+            <li class="grid__content--2">
                 <p class="grid__redtext">Coltan</p>
-                <!--  br === niet oke -->
-                <br>
-                <br>
-                <p id="demo"></p>
-                <br>
-
-                <p id="demo3"></p>
-            </div>
-            <!-- grid__content--3 -->
-            <div class="grid__content grid__content3">
-
+                <p id="js--demo"></p>
+                <p id="js--demo3"></p>
+            </li>
+            <li class="grid__content--3">
                 <h3>Ontvangen</h3>
-                <br>
-                <br>
-                <p id="demo6" class="grid__totalprice"></p>
-            </div>
-            <!-- grid__content--4 grid__content--5 hier zou ik een lijst van maken-->
-            <div class="grid__content grid__content4"></div>
-            <div class="grid__content grid__content5">
-
-
+                <p id="js--demo6" class="grid__totalprice"></p>
+            </li>
+            <li class="grid__content--4"></li>
+            <li class="grid__content--5">
                 <p class="grid__redtext">Casserite</p>
-
-                <br>
-                <br>
-                <p id="demo1"></p>
-                <br>
-
-                <p id="demo4"></p>
-            </div>
-            <div class="grid__content grid__content6">
-
-
+                <p id="js--demo1"></p>
+                <p id="js--demo4"></p>
+            </li>
+            <li class="grid__content6">
                 <h3>Ontvangen</h3>
                 <br>
                 <br>
-                <p class="grid__totalprice" id="demo7"></p>
-
-            </div>
-            <div class="grid__content grid__content7"></div>
-            <div class="grid__content grid__content8">
-
-
+                <p class="grid__totalprice" id="js--demo7"></p>
+            </li>
+            <li class="grid__content--7"></li>
+            <li class="grid__content--8">
                 <p class="grid__redtext">Wolframite</p>
-
                 <br>
                 <br>
-                <p id="demo2"></p>
+                <p id="js--demo2"></p>
                 <br>
-
-                <p id="demo5"></p>
-            </div>
-            <div class="grid__content grid__content9">
-
+                <p id="js--demo5"></p>
+            </li>
+            <li class="grid__content--9">
                 <h3>Ontvangen</h3>
                 <br>
                 <br>
-                <p id="demo8" class="grid__totalprice"></p>
-            </div>
+                <p id="js--demo8" class="grid__totalprice"></p>
+            </li>
+        </ul>
+
+        <h2>Chance's dagloon:</h2>
+        <p class="grid__totalprice" id="js--demo9">$</p>
+        <h1 class="bottom__text">Chance heeft zijn loon voor die dag ontvangen, hij heeft hier 14 uur voor gewerkt.
+            Sommige dagen zal hij
+            slechts een dollar verdienen. De mineralen die hij
+            heeft opgegraven zijn meer dan <span class="span__green">$200</span> waard op de internationale markt.
+            Grote
+            multinationals maken maar al te graag gebruik van goedkope arbeiders als Chance. Soortgelijke mineralen
+            uit
+            welvarende landen zoals Australië zijn veel duurder om in te kopen.
+        </h1>
+        <div class="container__button" id="button--js">
+            <a href="../Coltan/index.html"> <img src="../../img/arrow.webp" alt="arrow" class="arrow"></a>
         </div>
-        <section>
-            <h2>Chance's dagloon:</h2>
-            <!-- syntax error js--demo9 -->
-            <p class="grid__totalprice" id="demo9">$</p>
-            <h1 class="bottom__text">Chance heeft zijn loon voor die dag ontvangen, hij heeft hier 14 uur voor gewerkt.
-                Sommige dagen zal hij
-                slechts een dollar verdienen. De mineralen die hij
-                heeft opgegraven zijn meer dan <span class="span__green">$200</span> waard op de internationale markt.
-                Grote
-                multinationals maken maar al te graag gebruik van goedkope arbeiders als Chance. Soortgelijke mineralen
-                uit
-                welvarende landen zoals Australië zijn veel duurder om in te kopen.
-
-            </h1>
-
-
-            <div class="container__button" id="button--js">
-                <a href="../Coltan/index.html"> <img src="../../img/arrow.webp" alt="arrow" class="arrow"></a>
-            </div>
-
     </div>
-    </section>
+
     <script src="js/main.js"></script>
 
 </body>
