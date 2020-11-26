@@ -66,7 +66,7 @@ function onClick(thisElement) {
       mineralCounter++;
       document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
     }
-    else if(thisElement.id == "content--js") {
+    else if(thisElement.id == "content4--js" || "content5--js" || "content6--js") {
       thisElement.classList.remove("stone--1", "stone--2", "stone--3", "mine__content1");
       thisElement.classList.add("empty");
       thisElement.getElementsByClassName("textappear")[i].style.opacity = 1;
