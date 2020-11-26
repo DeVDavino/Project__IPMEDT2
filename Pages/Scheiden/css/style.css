@@ -159,7 +159,7 @@ header {
     opacity: 0;
 }
 
-.container__button:hover {
+.footer__button:hover {
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
