@@ -87,8 +87,8 @@ header {
     margin: auto;
     text-align: center;
     padding: 2rem;
-    box-shadow: inset 0 0 10px #000000;
-    border: 10px solid;
+    box-shadow: inset 0 0 1rem #000000;
+    border: 1rem solid;
     background-size: cover;
     background-position: center;
     border-image: url('../img/stoneBorderBackground.webp') 100 100 round;
@@ -171,7 +171,7 @@ header {
     left: 31%;
     top: 10%;
     cursor: pointer;
-    width: 40px;
+    width: 4rem;
     height: auto;
 }
 
@@ -179,7 +179,7 @@ h1 {
     color: var(--white-text);
     font-family: 'Play', sans-serif;
     width: auto;
-    max-width: 700px;
+    max-width: 70rem;
     margin: auto;
     font-size: 1.5rem;
     text-align: center;
@@ -190,7 +190,7 @@ h2 {
     color: var(--alternatetext-color);
     font-family: 'Allerta Stencil', sans-serif;
     margin: auto;
-    width: 400px;
+    width: 40rem;
     padding: 1rem;
     text-align: center;
     font-size: 2rem;
@@ -217,7 +217,7 @@ span {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr));
     max-width: 90%;
-    height: 475px;
+    height: 47.5rem;
     background-size: cover;
     padding: 1rem;
     margin: auto;
@@ -235,7 +235,7 @@ span {
 }
 
 .container__item1--active {
-    transform: translate(0, 500px);
+    transform: translate(0, 50rem);
     transition: all 2s;
 }
 
@@ -249,7 +249,7 @@ span {
 }
 
 .container__item2--active {
-    transform: translate(100px, 373px);
+    transform: translate(10rem, 37.3rem);
     transition: all 2s;
 }
 
@@ -263,7 +263,7 @@ span {
 }
 
 .container__item3--active {
-    transform: translate(-100px, 320px);
+    transform: translate(-10rem, 32rem);
     transition: all 2s;
 }
 
@@ -277,7 +277,7 @@ span {
 }
 
 .container__item4--active {
-    transform: translate(10px, 225px);
+    transform: translate(1rem, 22.5rem);
     transition: all 2s;
 }
 
@@ -291,7 +291,7 @@ span {
 }
 
 .container__item5--active {
-    transform: translate(0px, 300px);
+    transform: translate(0rem, 30rem);
     transition: all 2s;
 }
 
@@ -305,44 +305,44 @@ span {
 }
 
 .container__item6--active {
-    transform: translate(-50px, 400px);
+    transform: translate(-5rem, 40rem);
     transition: all 2s;
 }
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 70rem) {
     .container__grid {
         max-width: 80%;
-        max-height: 650px;
+        max-height: 65rem;
     }
 
     .grid2 {
-        width: 685px;
+        width: 68.5rem;
     }
 
 
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 50rem) {
     body {
         background-image: url("../img/desktopBackground.webp");
     }
     .container__grid {
-        height: 700px;
+        height: 70rem;
 }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 90rem) {
     body {
         background-image: url("../img/desktopBackground.webp");
     }
 
     h1 {
         font-size: 2.5rem;
-        max-width: 900px;
+        max-width: 90rem;
     }
     .container__grid {
-        height: 900px;
+        height: 90rem;
 }
 }
 
