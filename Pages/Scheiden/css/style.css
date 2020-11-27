@@ -126,6 +126,10 @@ header {
     height: 10rem;
     margin: auto;
 }
+figure{
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
 
 .u-wrapper {
     position: relative;
