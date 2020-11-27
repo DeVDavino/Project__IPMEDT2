@@ -110,18 +110,16 @@ span {
     margin: 0.5rem;
 }
 
-.header__text {
+.calc__dagloon, .header__text {
     font-family: 'Play', sans-serif;
     font-size: 1.4rem;
-}
-.calc_dagloon{
-    font-family: sans-serif;
-    font-size: 1.2rem;
 }
 .bottom__text{
     font-family: sans-serif;
     font-size: 1.2rem;
+    text-align: center;
 }
+
 
 .calc {
     width: 25rem;
