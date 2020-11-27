@@ -231,7 +231,7 @@ span {
 
 @media only screen and (min-width: 80rem){
     .header__text, .calc__dagloon, .bottom__text{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
