@@ -124,21 +124,23 @@ body {
     background-color: var(--span-color);
 }
 
-.button--hover:hover {
+.button--state:hover {
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
     background-color: var(--green-color);
 }
 
-
-.button__arrow {
+.button__arrow{
     position: relative;
-    left: 31%;
-    top: 10%;
+    left: 2%;
+    top: -2rem;
     cursor: pointer;
     width: 4rem;
     height: auto;
+}
+.button--styling{
+    border: none;
 }
 
 @media only screen and (min-width: 40rem){

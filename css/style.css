@@ -146,8 +146,8 @@ body {
 }
 
 @media only screen and (min-width: 70rem) {
-   p{
-       max-width: 120rem;
-   }
+    p{
+        max-width: 120rem;
+    }
 
 }
