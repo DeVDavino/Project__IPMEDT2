@@ -135,11 +135,14 @@ body {
 
 .button__arrow{
     position: relative;
-    left: 31%;
-    top: 10%;
+    left: 2%;
+    top: -2rem;
     cursor: pointer;
     width: 4rem;
     height: auto;
+}
+.button--styling{
+    border: none;
 }
 
 @media only screen and (min-width: 70rem) {
