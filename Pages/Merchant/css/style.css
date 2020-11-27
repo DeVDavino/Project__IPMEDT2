@@ -239,7 +239,7 @@ span {
 
 /*support query zodat je naar de volgende pagina kan als javascript faalt */
 @supports (opacity: 0) {
-    .container__button {
+    .button {
         opacity: 1;
 
     }

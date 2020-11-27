@@ -51,7 +51,7 @@ function typeWriter() {
 setInterval(check, 500);
 
 function check() {
-  var button = document.getElementById("button--js");
+  var button = document.getElementById("js--button");
     if (calcTracker >= 1) {
         button.style.opacity = '1';
     } else {
