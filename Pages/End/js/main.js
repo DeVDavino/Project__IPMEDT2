@@ -26,12 +26,12 @@ window.onscroll = function(){
 
 function typeWriter() {
     if (i < textField_5.length) {
-        document.getElementById("demo0__text--js").innerHTML += textField_0.charAt(i);
-        document.getElementById("demo1__text--js").innerHTML += textField_1.charAt(i);
-        document.getElementById("demo2__text--js").innerHTML += textField_2.charAt(i);
-        document.getElementById("demo3__text--js").innerHTML += textField_3.charAt(i);
-        document.getElementById("demo4__text--js").innerHTML += textField_4.charAt(i);
-        document.getElementById("demo5__text--js").innerHTML += textField_5.charAt(i);
+        document.getElementById("js--demo0__text").innerHTML += textField_0.charAt(i);
+        document.getElementById("js--demo1__text").innerHTML += textField_1.charAt(i);
+        document.getElementById("js--demo2__text").innerHTML += textField_2.charAt(i);
+        document.getElementById("js--demo3__text").innerHTML += textField_3.charAt(i);
+        document.getElementById("js--demo4__text").innerHTML += textField_4.charAt(i);
+        document.getElementById("js--demo5__text").innerHTML += textField_5.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
     }

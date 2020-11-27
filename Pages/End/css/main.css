@@ -262,8 +262,9 @@ span{
 /* scroll indicator */
 .top-panel {
     width: 100%;
-  }
-  .top-panel::before{
+}
+
+.top-panel::before{
     content: 'V';
     color: var(--alternatetext-color);
     position: absolute;
@@ -279,17 +280,17 @@ span{
     top: 75%;
     animation: bounce 1.5s ease infinite;
     font-family: sans-serif;
-  }
-  
-  @keyframes bounce {
+}
+
+@keyframes bounce {
     50% {
-      transform: translateY(-50%);
+        transform: translateY(-50%);
     }
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
-  
+}
+
 
 @media only screen and (min-width: 400px) {
     @keyframes appear {
