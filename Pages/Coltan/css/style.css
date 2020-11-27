@@ -24,11 +24,11 @@ body {
     background-color: var(--background-color);
 }
 
-.section__1 {
+.section--1 {
     height: 100vh;
 }
 
-.section__2 {
+.section--2 {
     height: 100vh;
     padding-bottom: 6rem;
 }
@@ -242,7 +242,7 @@ h1 {
 
 
 /* section 3 content */
-.section__3 {
+.section--3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -253,7 +253,7 @@ h1 {
     margin-bottom: 5rem;
 }
 
-.section__3 video {
+.section--3 video {
     grid-column: 1 / 4;
     grid-row: 1 / 5;
     height: auto;
@@ -332,7 +332,7 @@ button {
 }
 
 @media only screen and (min-width: 60rem) {
-    .section__1 {
+    .section--1 {
         height: 80vh;
     }
 }
