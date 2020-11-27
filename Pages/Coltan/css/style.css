@@ -262,39 +262,38 @@ h1 {
 }
 
 /*navigatie*/
-.section__button {
+.button {
     position: fixed;
     left: 0;
     right: 0;
     margin-left: auto;
-    background-color: var(--span-color);
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
     bottom: -5rem;
 }
 
-.section__button:hover {
+.button--red{
+    background-color: var(--span-color);
+}
+
+.button--state:hover {
     transform: scale(2);
     transition-delay: 0.1s;
     transition-duration: 0.2s;
     background-color: var(--green-color);
 }
 
-button {
+.button__arrow{
     position: relative;
-    left: 34.5%;
-    top: 30%;
-    cursor: pointer;
-}
-
-.arrow {
-    position: relative;
-    left: 31%;
-    top: 10%;
+    left: 2%;
+    top: -2rem;
     cursor: pointer;
     width: 4rem;
     height: auto;
+}
+.button--styling{
+    border: none;
 }
 
 /* scroll indicator */
