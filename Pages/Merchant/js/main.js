@@ -12,7 +12,7 @@ var speed1 = 500;
 var calcTracker = 0;
 var audio = new Audio("audio/audio3.mp3");
 var audioTracker = 0;
-
+var muteButton = document.getElementById("js--muteButton");
 
 function mute(){
 

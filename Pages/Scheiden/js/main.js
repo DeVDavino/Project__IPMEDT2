@@ -7,7 +7,7 @@ var sixthMineral = document.getElementById('container__item--6');
 let itemsContainer = document.getElementById('dropbox');
 var paragraph = document.getElementById('footer__counter--js');
 var button = document.getElementById('button--js');
-var muteButton = document.getElementById('muteButton');
+var muteButton = document.getElementById('js--muteButton');
 var clicks = 0;
 var audio = new Audio("./audio/scheiden.mp3");
 

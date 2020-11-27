@@ -3,12 +3,11 @@ var mineralCounter = 0;
 var audio = new Audio("audio/stone.mp3");
 var audio2 = new Audio("audio/stone2.mp3");
 var i = 0;
-document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
+document.getElementById("js--CounterVar").innerHTML = mineralCounter + "/3";
 var x = 0;
-
-
 var audioTracker = 0;
-document.getElementById("myButton--js").disabled = true;
+document.getElementById("js--myButton").disabled = true;
+var muteButton = document.getElementById("js--muteButton");
 
 function mute() {
   muteButton.classList.toggle("headermute--muted");
@@ -21,7 +20,6 @@ function mute() {
     audio2.muted = false;
     audioTracker--;
   }
-
 }
 
 // grid functie
@@ -44,29 +42,29 @@ function onClick(thisElement) {
     return clicks;
 
   } else if (clicks = 3) {
-    if(thisElement.id == "content1--js") {
+    if(thisElement.id == "js--content1") {
       thisElement.classList.remove("stone--1", "stone--2", "stone--3", "mine__content1");
       thisElement.classList.add("coltan");
-      document.getElementById('textAppear1').style.opacity = "1";
+      document.getElementById('js--textAppear1').style.opacity = "1";
       thisElement.removeAttribute("onclick");
       mineralCounter++;
-      document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
-    }else if(thisElement.id == "content2--js") {
+      document.getElementById("js--CounterVar").innerHTML = mineralCounter + "/3";
+    }else if(thisElement.id == "js--content2") {
       thisElement.classList.remove("stone--1", "stone--2", "stone--3", "mine__content1");
       thisElement.classList.add("wolframite");
-      document.getElementById('textAppear2').style.opacity = "1";
+      document.getElementById('js--textAppear2').style.opacity = "1";
       thisElement.removeAttribute("onclick");
       mineralCounter++;
-      document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
-    }else if(thisElement.id == "content3--js") {
+      document.getElementById("js--CounterVar").innerHTML = mineralCounter + "/3";
+    }else if(thisElement.id == "js--content3") {
       thisElement.classList.remove("stone--1", "stone--2", "stone--3", "mine__content1");
       thisElement.classList.add("casserite");
-      document.getElementById('textAppear3').style.opacity = "1";
+      document.getElementById('js--textAppear3').style.opacity = "1";
       thisElement.removeAttribute("onclick");
       mineralCounter++;
-      document.getElementById("CounterVar--js").innerHTML = mineralCounter + "/3";
+      document.getElementById("js--CounterVar").innerHTML = mineralCounter + "/3";
     }
-    else if(thisElement.id == "content4--js" || "content5--js" || "content6--js") {
+    else if(thisElement.id == "js--content4" || "js--content5" || "js--content6") {
       thisElement.classList.remove("stone--1", "stone--2", "stone--3", "mine__content1");
       thisElement.classList.add("empty");
       thisElement.getElementsByClassName("textappear")[i].style.opacity = 1;
@@ -83,19 +81,19 @@ setInterval(onLoad, 500);
 
 function onLoad() {
   if (mineralCounter == 3) {
-    document.getElementById("myButton--js").style.opacity = "1";
-    document.getElementById("myButton--js").style.backgroundColor = "#0EA900";
-    document.getElementById("CounterVar--js").style.fontSize = "2.55rem";
-    document.getElementById("CounterVar--js").style.borderColor = "#00FF00";
-    document.getElementById("CounterVar--js").innerHTML = "✔";
-    document.getElementById("CounterVar--js").style.color = "#eeeeee";
-    document.getElementById("myButton--js").disabled = false;
+    document.getElementById("js--myButton").style.opacity = "1";
+    document.getElementById("js--myButton").style.backgroundColor = "#0EA900";
+    document.getElementById("js--CounterVar").style.fontSize = "2.55rem";
+    document.getElementById("js--CounterVar").style.borderColor = "#00FF00";
+    document.getElementById("js--CounterVar").innerHTML = "✔";
+    document.getElementById("js--CounterVar").style.color = "#eeeeee";
+    document.getElementById("js--myButton").disabled = false;
   } 
 }
 setInterval(check, 100);
 
 function check() {
-  var button = document.getElementById("myButton--js");
+  var button = document.getElementById("js--myButton");
   if (mineralCounter >= 3) {
     button.style.opacity = '1';
   } else {

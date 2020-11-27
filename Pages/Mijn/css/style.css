@@ -69,7 +69,7 @@ p {
   margin-top: 10%;
 }
 
-.button__pcontent {
+.footer__pcontent {
   display: grid;
   font-size: 3rem;
   padding: 1rem;
@@ -81,7 +81,7 @@ p {
   margin: auto;
 }
 
-.button__counterp {
+.footer__counterp {
   display: flex;
   width: 15rem;
   align-items: center;
@@ -128,7 +128,7 @@ span{
   margin-bottom: 2rem;
 }
 
-.button {
+.footer__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5.5rem 5.5rem;
@@ -139,7 +139,7 @@ span{
   padding: 0.2rem;
 }
 
-.button__next {
+.footer__next {
   width: 33rem;
   margin: auto;
   height: 3rem;
@@ -174,7 +174,7 @@ span{
   box-shadow: inset 0 0 1rem #000000;
 }
 
-.button__next:hover, .button_next:active{
+.footer__next:hover, .footer_next:active{
   box-shadow:  inset 0 0 1rem #000000;
 }
 
@@ -249,7 +249,7 @@ a{
 }
 
 @media only screen and (min-width: 40rem){
-  .button__pcontent{
+  .footer__pcontent{
     margin-top: .4rem;
   }
 }
@@ -264,7 +264,7 @@ a{
   .grid2 {
     width: 80%;
   }
-  .button__grid{
+  .footer__grid{
     margin-top: 2rem;
   }
   h1{
@@ -273,7 +273,7 @@ a{
 }
 /*support query voor als javascript faalt */
 @supports  (opacity: 0) {
-  .button__next {
+  .footer__next {
 opacity: 1;
   }
 }
