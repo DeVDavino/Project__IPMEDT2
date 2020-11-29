@@ -10,6 +10,13 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-color: var(--black-color);
+}
+
 :root{
     --background-color: #0D0D0D;
     --textbackground-color: #F2F2F2;
@@ -20,26 +27,20 @@ html {
     --black-color: #000000;
 }
 
-header {
+/* header */
+.header {
     background-color: var(--header-color);
     height: 5rem;
     width: 100%;
     border-bottom: 2px solid var(--alternatetext-color);
 }
 
-body {
-    height: 100vh;
-    width: 100%;
-    margin: auto;
-    background-color: var(--black-color);
-}
-
-
-.logoimg {
+.header__image {
     max-height: 4.8rem;
     float: left;
 }
-h2{
+
+.header__text{
     color: var(--alternatetext-color);
     font-family: 'Allerta Stencil', sans-serif;
     margin: auto;
@@ -47,9 +48,12 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
-span{
+
+.header__text span{
     color: var(--span-color);
 }
+
+
 /* sections */
 .section__2,
 .section__3,

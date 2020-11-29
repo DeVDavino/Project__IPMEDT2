@@ -5,8 +5,8 @@ var textField_2 = '- 200,000+ vrouwen en kinderen verkracht';
 var textField_3 = '- 20,000+ gorillas en andere bedreigde diersoorten gedood voor bouw nieuwe mijnen';
 var textField_4 = '- Mensen worden niet voldoende uitbetaald voor het werk dat ze in de mijnen verrichten';
 var textField_5 = '- Kinderen worden veelvuldig gebruikt voor deze onmenselijke arbeid met een hoog sterftecijfer';
-document.getElementById("section__4--js").style.opacity = 0;
-document.getElementById("section__social--js").style.opacity = 0;
+document.getElementById("js--section__4").style.opacity = 0;
+document.getElementById("js--section__social").style.opacity = 0;
 var speed = 100;
 
 
@@ -15,11 +15,11 @@ window.onscroll = function(){
         typeWriter();
     }
     else if(window.scrollY >= 1050){
-        document.getElementById("section_textbox4--js").classList.add("appear");
-        document.getElementById("section__box1--js").classList.add("appear");
-        document.getElementById("section_box2--js").classList.add("fromLeft");
-        document.getElementById("section__4--js").style.opacity = 1;
-        document.getElementById("section__social--js").style.opacity = 1;
+        document.getElementById("js--section__textbox4").classList.add("appear");
+        document.getElementById("js--section__box1").classList.add("appear");
+        document.getElementById("js--section__box2").classList.add("fromLeft");
+        document.getElementById("js--section__4").style.opacity = 1;
+        document.getElementById("js--section__social").style.opacity = 1;
     }
 
 }
