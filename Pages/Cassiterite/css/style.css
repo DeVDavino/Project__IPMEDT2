@@ -331,3 +331,52 @@ h1 {
         height: 80vh;
     }
 }
+@supports not (display: grid) {
+    .section__grid{
+      display: table;
+      width: 35%;
+      list-style: none;
+      table-layout: fixed;
+      padding-right: 30%;
+      margin: auto;
+
+    }
+    .grid__graph1, .grid__graph2, .grid__graph3, .grid__graph4{
+        width: 10rem;
+        height: 10rem;
+    }
+    .grid__text1, .grid__text2, .grid__text3, .grid__text4{
+        position: absolute;
+        width: 10rem;
+        right: 10%;
+    }
+    @media only screen and (min-width: 60rem) {
+        .grid__text1{
+            top: 90%;
+        }
+        .grid__text2{
+            top: 100%;
+        }
+        .grid__text3{
+            top: 110%;
+        }
+        .grid__text4{
+            top: 120%;
+        }
+    }
+    @media only screen and (max-width: 60rem) {
+        .grid__text1{
+            top: 120%;
+        }
+        .grid__text2{
+            top: 130%;
+        }
+        .grid__text3{
+            top: 140%;
+        }
+        .grid__text4{
+            top: 150%;
+        }
+    }
+    
+  }

@@ -365,3 +365,17 @@ span {
 }
 
 /* maak een support querie voor als ch het niet doet en flexbox oid. */
+
+@supports (display: grid) {
+    .container__grid{
+      display: table;
+      width: 35%;
+      list-style: none;
+      padding-right: 30%;
+    }
+    .container__item1, .container__item2, .container__item3, .container__item4, .container__item5, .container__item6{
+        height: 15%;
+        width: 20rem;
+    }
+   
+  }

@@ -242,3 +242,21 @@ span {
 
     }
 }
+@supports not (display: grid) {
+    .container__pricegrid{
+      display: table;
+      width: 35%;
+      list-style: none;
+      padding-right: 30%;
+    }
+    .grid__content--1, .grid__content--2, .grid__content--3, .grid__content--4, .grid__content--5, .grid__content--6, .grid__content--7, .grid__content--8, .grid__content--9{
+        height: 15rem;
+        width: 20rem;
+    }
+    body{
+        background-repeat: repeat-y;
+    }
+    .bottom__text{
+        margin: 5rem;
+    }
+}

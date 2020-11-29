@@ -277,3 +277,16 @@ a{
 opacity: 1;
   }
 }
+@supports not (display: grid) {
+  .mine{
+    display: table;
+    width: 35%;
+    list-style: none;
+    table-layout: auto;
+    padding-right: 30%;
+  }
+  .mine__content{
+    height: 10%;
+    width: 200%;
+  }
+}
