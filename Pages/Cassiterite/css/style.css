@@ -22,6 +22,7 @@ html {
 
 body {
     background-color: var(--background-color);
+    
 }
 
 .section--1 {
@@ -31,6 +32,10 @@ body {
 .section--2 {
     height: 100vh;
     margin-bottom: 10rem;
+}
+img{
+   margin: auto;
+   max-width: 95%;
 }
 
 /* header */
