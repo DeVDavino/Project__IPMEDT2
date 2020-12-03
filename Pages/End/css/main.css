@@ -168,7 +168,6 @@ body {
     text-align: center;
     line-height: normal;
     font-family: 'Roboto', sans-serif;
-    position: flex-end;
 }
 
 .section__3 video {
@@ -211,11 +210,10 @@ body {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
     grid-column: 2;
     grid-row: 3;
-
 }
 
 .section__social img {
