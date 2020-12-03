@@ -106,7 +106,6 @@ body {
     line-height: normal;
     text-align: left;
     max-width: 80rem;
-
 }
 
 .button {
@@ -147,10 +146,7 @@ body {
     .content__text{
         height: 20rem;
     }
-    .content__text > p{
-        font-size: 1.5rem;
-
-    }
+   
 }
 @media only screen and (min-width: 60rem) {
     .content__content {
