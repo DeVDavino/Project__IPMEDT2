@@ -27,7 +27,11 @@
             </div>
         </header>
         <h1>Coltan</h1>
-        <img class="section__mineral" src="../../img/coltan.webp" alt="cassierite">
+        <picture>
+            <source media="(max-width:650px)" srcset="../../img/coltan250x250.webp">
+            <img class="section__mineral" src="../../img/coltan.webp" alt="cassierite">
+        </picture>
+
         <div class="section__textbox">
             <p class="section__text">Coltan is een mineraal wat essentieel is voor de techindustrie, het geleidt erg
                 goed en wordt vooral gebruikt voor printplaten en batterijen.
@@ -90,10 +94,9 @@
 
         <button class="button button--styling button--state button--red">
             <!-- een knop moet een button zijn en een link een a -->
-            <a href="../Cassiterite/index.html"> <img src="../../img/arrow.webp" alt="arrow"
-                    class="button__arrow"></a>
+            <a href="../Cassiterite/index.html"> <img src="../../img/arrow.webp" alt="arrow" class="button__arrow"></a>
         </button>
-        
+
     </section>
 
     <script src="js/main.js" async defer></script>
