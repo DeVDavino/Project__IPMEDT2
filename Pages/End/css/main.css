@@ -143,7 +143,6 @@ body {
     font-size: 2rem;
     color: var(--span-color);
     font-family: 'Big Shoulders Stencil Text', cursive;
-
 }
 
 .section__textbox2 p {
@@ -204,6 +203,7 @@ body {
     text-align: center;
     line-height: normal;
     font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
 
 }
 
